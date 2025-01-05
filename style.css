@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.landing{
+    padding: 15px 20px 15px 20px;
+}
+.announcement-bar{
+    background: green;
+    width: 100%;
+    height: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    padding: 5px 190px 5px 70px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: #3ad83a;
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    float: inline-start;
+    gap: 30px;
+    
+}
+.nav-links input{
+    width: 320px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(209, 208, 206);
+    color: green;
+    padding: 5px 15px ;
+    border: none;
+    outline: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    color: green;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background: #f8eed2;
+    border-radius: 15px;
+    padding: 50px 150px ;
+}
+.banner h1{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: green;
+}
+.banner button{
+    width: 100px;
+    height: 50px;
+    margin: 30px 60px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: green;
+    cursor: pointer;
+    font-size: medium;
+}
+.scroll-bar{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 60px;
+    gap: 50px;
+}
+.Sneakers-brand a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.price a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.latest-release a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Review a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Designs a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Colors a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Year a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.all-filter a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.sort-by a{
+    width: 90px;
+    height: 30px;
+    background: white;
+    border: 2px solid grey;
+    text-decoration: none;
+    color: black;  
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    right: 0%;
+}
+.sort-by a:hover{
+    background: #3ad83a;
+    border: none;
+}

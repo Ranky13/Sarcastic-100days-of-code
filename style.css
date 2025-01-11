@@ -6,7 +6,7 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #ffff;
 }
 .landing{
@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 40%;
-    padding: 5px 190px 5px 70px;
+    padding: 1px 190px 10px 70px;
 }
 .nav-bar{
     display: flex;
@@ -47,7 +47,13 @@ body{
     flex-direction: row;
     float: inline-start;
     gap: 30px;
-    
+    justify-content: space-between;
+}
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
 }
 .nav-links input{
     width: 320px;
@@ -66,13 +72,46 @@ body{
 .nav-links a:hover{
     color: green;
 }
+.sub-categories{
+    display: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav-links ul li:hover .sub-categories{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 5px;
+    margin-left: -15px;
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px;
+}
+.nav-links ul li:hover .sub-categories li a{
+    color: white;
+}
+.nav-links ul li:hover .sub-categories ul{
+    display: block;
+    line-height: 30px;
+}
+.nav-links ul li:hover .sub-categories ul li a:hover{
+    color: #baf3ba;
+    padding: 10px 10px 10px ;
+}
 .banner{
     width: 100%;
     height: 300px;
     background: #f8eed2;
     border-radius: 15px;
     padding: 50px 150px ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
+}
+.banner img{
+    width: 290px;
+    height: 290px;
+    top: 10%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
 }
 .banner h1{
     font-size: 3rem;
@@ -91,40 +130,54 @@ body{
     cursor: pointer;
     font-size: medium;
 }
+.banner button:hover{
+    color: #baf3ba;
+}
 .latest-collections{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
 }
 .latest-collections h1{
     text-align: center;
     white-space: nowrap;
     margin: 20px 0 0 0;
     position: absolute;
-    left: 50%;
+    left: 45%;
+    cursor: pointer;
 }
 .LT-wrapper{
     display: inline-block;
-    margin: 60px 0 30px 0;
+    margin: 60px 10px 30px 0;
 }
 .LT-cards{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: #f8eed2;
+    background: #8080802f;
     margin: 20px 10px 5px 0;
     gap: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.LT-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .LT-wrapper h2{
     font-size: small;
     text-align: center;
 }
+.LT-wrapper h2:hover{
+    color: green;
+}
 .scroll-bar{
     display: flex;
     flex-direction: row;
-    margin: 30px 40px;
+    margin: 40px 40px;
     gap: 30px;
 }
    
@@ -133,96 +186,104 @@ body{
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .Sneakers-brand a:hover{
     background: rgba(128, 128, 128, 0.185);
+    color: black;
     }
 .price a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .price a:hover{
     background: rgba(128, 128, 128, 0.185);
-    }
+    color: black;
+}
 .latest-release a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .latest-release a:hover{
-    background: rgba(128, 128, 128, 0.185);
+    background: #8080802f;
+    color: black;
     }
 .Review a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .Review a:hover{
     background: rgba(128, 128, 128, 0.185);
+    color: black;
     }
 .Designs a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .Designs a:hover{
     background: rgba(128, 128, 128, 0.185);
+    color: black;
     }
 .Colors a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .Colors a:hover{
     background: rgba(128, 128, 128, 0.185);
+    color: black;
     }
 .Year a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .Year a:hover{
 background: rgba(128, 128, 128, 0.185);
+color: black;
 }
 .all-filter a{
     width: 200px;
     height: 70px;
     background: #3ad83a;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
 }
 .all-filter a:hover{
-background: rgba(128, 128, 128, 0.185);
+background: #8080802f;
+color: black;
 }
 .sort-by a{
     width: 90px;
@@ -237,4 +298,67 @@ background: rgba(128, 128, 128, 0.185);
 }
 .sort-by a:hover{
     background: rgba(128, 128, 128, 0.185);
+}
+.Trending-card{
+    margin: 0 20px;
+}
+.Trending-card h1{
+    margin: 0 20px;
+    left: 45%;
+}
+.trending-column{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+ 
+}
+
+.landing-products-card{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 55px 0;
+}
+
+.landing-products-card-details {
+    padding: 20px 0 20px 0;
+}
+.landing-products-card-details h2, p{
+    margin: 10px 0 10px 0;
+}
+.landing-products-card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.buy-button{
+    width: 100px;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #3ad83a;
+    color: white;
+}
+.cart-button{
+    width: 100px;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background: #3ad83a;
+    color: white;
+
+}
+.cart-button:hover{
+    background: #ddd;
+    border: none;
+    color: black;
+}
+.buy-button:hover{
+    background: #ddd;
+    border: none;
+    color: black;
 }

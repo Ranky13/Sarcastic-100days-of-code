@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+}
+.landing{
+    padding: 15px 20px 15px 20px;
+}
+.announcement-bar{
+    background: green;
+    width: 100%;
+    height: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    padding: 1px 190px 10px 70px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: #3ad83a;
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    float: inline-start;
+    gap: 30px;
+    justify-content: space-between;
+}
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+.nav-links input{
+    width: 320px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(209, 208, 206);
+    color: green;
+    padding: 5px 15px ;
+    border: none;
+    outline: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    color: green;
+}
+.sub-categories{
+    display: none;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-links ul li:hover .sub-categories{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 5px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 0px 5px 10px;
+   
+}
+.nav-links ul li:hover .sub-categories li a{
+    color: white;;
+    padding: 0 0 ;
+}
+.nav-links ul li:hover .sub-categories ul{
+    display: block;
+    line-height: 30px;
+}
+.nav-links ul li:hover .sub-categories ul li a:hover{
+    color: #baf3ba;
+    padding: 10px 0px 10px;
+    border-bottom: 1px solid #3ad83a;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background: #f8eed2;
+    border-radius: 15px;
+    padding: 50px 150px ;
+    box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
+}
+.banner img{
+    width: 290px;
+    height: 290px;
+    top: 12%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
+}
+.banner h1{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: green;
+}
+.banner button{
+    width: 100px;
+    height: 50px;
+    margin: 30px 60px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: green;
+    cursor: pointer;
+    font-size: medium;
+}
+.banner button:hover{
+    color: #baf3ba;
+}
+.latest-collections{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.latest-collections h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
+}
+.LT-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.LT-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.LT-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.LT-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.LT-wrapper h2:hover{
+    color: green;
+}
+.scroll-bar{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 40px;
+    gap: 30px;
+}
+   
+.Sneakers-brand a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Sneakers-brand a:hover{
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
+    }
+.price a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.price a:hover{
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
+}
+.latest-release a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.latest-release a:hover{
+    background: #8080802f;
+    color: black;
+    }
+.Review a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Review a:hover{
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
+    }
+.Designs a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Designs a:hover{
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
+    }
+.Colors a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Colors a:hover{
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
+    }
+.Year a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.Year a:hover{
+background: rgba(128, 128, 128, 0.185);
+color: black;
+}
+.all-filter a{
+    width: 200px;
+    height: 70px;
+    background: #3ad83a;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+}
+.all-filter a:hover{
+background: #8080802f;
+color: black;
+}
+.sort-by a{
+    width: 90px;
+    height: 30px;
+    background: white;
+    border: 2px solid grey;
+    text-decoration: none;
+    color: black;  
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    right: 0%;
+}
+.sort-by a:hover{
+    background: rgba(128, 128, 128, 0.185);
+}
+.Trending-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.trending-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.trending-column{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    gap: 20px;
+    width: 1900px;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.trending-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.trending-cards-details h2{
+    font-size: medium;
+}
+.trending-cards-details p{
+    font-size: medium;
+}
+.trending-cards-details h3{
+    font-size: medium;
+}
+.trending-column img{
+    object-fit: cover;
+}
+.trending-details{
+    padding: 5px 10px 5px;
+}
+.buy-button{
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #3ad83a;
+    color: white;
+}
+.cart-button{
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background: #3ad83a;
+    color: white;
+
+}
+.cart-button:hover{
+    background: #ddd;
+    border: none;
+    color: black;
+}
+.buy-button:hover{
+    background: #ddd;
+    border: none;
+    color: black;
+}
+.female-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.female-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.female-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+}
+.female-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.female-column{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    gap: 20px;
+    width: 1900px;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.female-cards-details h2{
+    font-size: medium;
+}
+.female-cards-details p{
+    font-size: medium;
+}
+.female-cards-details h3{
+    font-size: medium;
+}
+.female-column img{
+    object-fit: cover;
+}
+.female-details{
+    padding: 5px 10px 5px;
+}
+
+.Kids-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.Kids-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.Kids-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+}
+.Kids-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.Kids-column{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    gap: 20px;
+    width: 1900px;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.Kids-cards-details h2{
+    font-size: medium;
+}
+.Kids-cards-details p{
+    font-size: medium;
+}
+.Kids-cards-details h3{
+    font-size: medium;
+}
+.-Kids img{
+    object-fit: cover;
+}
+.kids-details{
+    padding: 5px 10px 5px;
+}

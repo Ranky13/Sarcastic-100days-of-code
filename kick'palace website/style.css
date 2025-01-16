@@ -312,9 +312,9 @@ color: black;
 }
 .trending-column{
     display: grid;
-    grid-template-columns: repeat(5,2fr);
+    grid-template-columns: repeat(6,2fr);
     gap: 20px;
-    width: 1900px;
+    width: fit-content;
     height: 1000px;
     margin: 20px 0 20px 0;
 }
@@ -387,9 +387,9 @@ color: black;
 }
 .female-column{
     display: grid;
-    grid-template-columns: repeat(5,2fr);
+    grid-template-columns: repeat(6,2fr);
     gap: 20px;
-    width: 1900px;
+    width: fit-content;
     height: 1000px;
     margin: 20px 0 20px 0;
 }
@@ -405,8 +405,8 @@ color: black;
 .female-column img{
     object-fit: cover;
 }
-.female-details{
-    padding: 5px 10px 5px;
+.female-details {
+    padding: 5px 10px 10px;
 }
 
 .Kids-sneakers{
@@ -430,9 +430,9 @@ color: black;
 }
 .Kids-column{
     display: grid;
-    grid-template-columns: repeat(5,2fr);
+    grid-template-columns: repeat(6,2fr);
     gap: 20px;
-    width: 1900px;
+    width: fit-content;
     height: 1000px;
     margin: 20px 0 20px 0;
 }
@@ -445,9 +445,47 @@ color: black;
 .Kids-cards-details h3{
     font-size: medium;
 }
-.-Kids img{
+.Kids-cards-details img{
     object-fit: cover;
 }
 .kids-details{
     padding: 5px 10px 5px;
+}
+.footer-section{
+    background: #b4b3b3;
+}
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 50px;
+    line-height: 3;
+    color: #888484;
+}
+.footer-section h1{
+    color: white;
+}
+.footer-contents p:hover{
+    color: white;
+}
+.footer-section a{
+    color: #888484;
+    text-decoration: none;
+}
+.footer-section a:hover{
+    color: white;
+}
+.brand h1{
+    color: green;
+    border-radius: 5px;
+    font-weight: 500;
+}
+#footer-logo{
+    width: 50px;
+    height: 40px;
+}
+.social-links{
+    gap: 10px;
+}
+.copy-right{
+    padding: 30px 10px 30px;
 }

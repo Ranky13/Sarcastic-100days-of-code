@@ -174,8 +174,12 @@ body{
     font-size: small;
     text-align: center;
 }
-.LT-wrapper h2:hover{
-    color: green;
+.LT-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.LT-wrapper a:hover{
+    color: #3ad83a;
 }
 .scroll-bar{
     display: flex;
@@ -404,6 +408,8 @@ color: black;
 }
 .female-column img{
     object-fit: cover;
+    width: 400px;
+    height: 300px;
 }
 .female-details {
     padding: 5px 10px 10px;
@@ -452,30 +458,34 @@ color: black;
     padding: 5px 10px 5px;
 }
 .footer-section{
-    background: #b4b3b3;
+    background: rgb(37, 182, 37);
 }
 .footer-contents{
     display: flex;
     justify-content: space-between;
     padding: 50px 100px 50px;
     line-height: 3;
-    color: #888484;
+    color: white;
 }
 .footer-section h1{
     color: white;
 }
 .footer-contents p:hover{
-    color: white;
+    color:#3ad83a;
+}
+.brand hr{
+    outline: 2px solid green;
 }
 .footer-section a{
-    color: #888484;
+    color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .footer-section a:hover{
-    color: white;
+    color: #3ad83a;
 }
 .brand h1{
-    color: green;
+    color: white;
     border-radius: 5px;
     font-weight: 500;
 }
@@ -483,9 +493,96 @@ color: black;
     width: 50px;
     height: 40px;
 }
-.social-links{
-    gap: 10px;
+.bi{
+    flex-direction: row;
+    justify-content: space-between;
 }
 .copy-right{
-    padding: 30px 10px 30px;
+    display: flex;
+    padding: 30px 100px 30px;
+    gap: 500PX;
+    color: rgb(255, 255, 255);
+    outline: 5px solid green;
+}
+/*----------------------NIKE PAGE START HERE--------------------*/
+.nike-banner{
+    width: 100%;
+    height: 300px;
+    background: #f8eed2;
+    border-radius: 15px;
+    padding: 50px 150px ;
+    box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
+}
+.nike-banner img{
+    width: 290px;
+    height: 290px;
+    top: 12%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
+}
+.nike-banner h1{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: green;
+}
+.nike-banner button{
+    width: 100px;
+    height: 50px;
+    margin: 30px 60px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: green;
+    cursor: pointer;
+    font-size: medium;
+}
+.nike-banner button:hover{
+    color: #baf3ba;
+}
+.nike-collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.NT-wrapper{
+
+}
+.NT-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.NT-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.NT-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.NT-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.NT-wrapper h2:hover{
+    color: green;
+}
+
+.nike-collection h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
 }

@@ -39,6 +39,9 @@ body{
     width: 40px;
     height: 40px;
 }
+
+
+/*-----------------------------NAV LINKS SECTION----------------------------------*/
 .nav-links li{
     list-style: none;
 }
@@ -100,6 +103,9 @@ body{
     padding: 10px 0px 10px;
     border-bottom: 1px solid #3ad83a;
 }
+
+
+/*-----------------------------BANNER SECTION----------------------------------*/
 .banner{
     width: 100%;
     height: 300px;
@@ -136,6 +142,10 @@ body{
 .banner button:hover{
     color: #baf3ba;
 }
+
+
+
+/*-----------------------------LATEST RELEASE SECTION---------------------------------*/
 .latest-collections{
     width: 100%;
     display: flex;
@@ -181,6 +191,10 @@ body{
 .LT-wrapper a:hover{
     color: #3ad83a;
 }
+
+
+
+/*-----------------------------SCROLL BAR SECTION----------------------------------*/
 .scroll-bar{
     display: flex;
     flex-direction: row;
@@ -306,6 +320,9 @@ color: black;
 .sort-by a:hover{
     background: rgba(128, 128, 128, 0.185);
 }
+
+
+/*-----------------------------TRENDING SECTION----------------------------------*/
 .Trending-sneakers{
     margin: 10px 5px 20px 5px;
 }
@@ -370,6 +387,9 @@ color: black;
     border: none;
     color: black;
 }
+
+
+/*------------------------FEMLE SECTION-------------------------------------------*/
 .female-sneakers{
     margin: 10px 5px 20px 5px;
 }
@@ -406,15 +426,17 @@ color: black;
 .female-cards-details h3{
     font-size: medium;
 }
-.female-column img{
+.female-cards-details img{
     object-fit: cover;
-    width: 400px;
+    width: 100%;
     height: 300px;
 }
 .female-details {
     padding: 5px 10px 10px;
 }
 
+
+/*----------------KIDS SECTION-------------------------------------*/
 .Kids-sneakers{
     margin: 10px 5px 20px 5px;
 }
@@ -453,10 +475,14 @@ color: black;
 }
 .Kids-cards-details img{
     object-fit: cover;
+    width: 100%;
 }
 .kids-details{
     padding: 5px 10px 5px;
 }
+
+
+/*-----------------------------FOOTER SECTION----------------------------------*/
 .footer-section{
     background: rgb(37, 182, 37);
 }
@@ -504,85 +530,4 @@ color: black;
     color: rgb(255, 255, 255);
     outline: 5px solid green;
 }
-/*----------------------NIKE PAGE START HERE--------------------*/
-.nike-banner{
-    width: 100%;
-    height: 300px;
-    background: #f8eed2;
-    border-radius: 15px;
-    padding: 50px 150px ;
-    box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
-}
-.nike-banner img{
-    width: 290px;
-    height: 290px;
-    top: 12%;
-    left: 80%;
-    position: absolute;
-    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
-}
-.nike-banner h1{
-    font-size: 3rem;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-weight: bolder;
-    color: green;
-}
-.nike-banner button{
-    width: 100px;
-    height: 50px;
-    margin: 30px 60px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    background: green;
-    cursor: pointer;
-    font-size: medium;
-}
-.nike-banner button:hover{
-    color: #baf3ba;
-}
-.nike-collection{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.NT-wrapper{
 
-}
-.NT-wrapper{
-    display: inline-block;
-    margin: 60px 10px 30px 0;
-}
-.NT-cards{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #8080802f;
-    margin: 20px 10px 5px 0;
-    gap: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.NT-cards img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.NT-wrapper h2{
-    font-size: small;
-    text-align: center;
-}
-.NT-wrapper h2:hover{
-    color: green;
-}
-
-.nike-collection h1{
-    text-align: center;
-    white-space: nowrap;
-    margin: 20px 0 0 0;
-    position: absolute;
-    left: 45%;
-    cursor: pointer;
-}

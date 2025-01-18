@@ -1,0 +1,169 @@
+/*-------------------------------------------------------kids PAGE--------------------------------------------*/
+.kids-collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.kids-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.kids-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.kids-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.kids-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.kids-wrapper h2:hover{
+    color: green;
+}
+.kids-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.kids-wrapper a:hover{
+    color: #3ad83a;
+}
+.kids-collection h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+}
+
+.trending-kids-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.kids-Trending-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.kids-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.kids-trending-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.kids-trending-cards-details h2{
+    font-size: medium;
+}
+.kids-trending-cards-details p{
+    font-size: medium;
+}
+.kids-trending-cards-details h3{
+    font-size: medium;
+}
+.kids-trending-cards-details img{
+    object-fit: cover;
+    width: 300px;
+}
+
+
+
+
+
+.kids-sport-title h1{
+    margin: 105px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.kids-sport-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.kids-sport-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.kids-sport-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.kids-sport-cards-details h2{
+    font-size: medium;
+}
+.kids-sport-cards-details p{
+    font-size: medium;
+}
+.kids-sport-cards-details h3{
+    font-size: medium;
+}
+.kids-sport-cards-details img{
+    object-fit: cover;
+    width: 300px;
+}
+
+
+
+.kids-vacation-title h1{
+    margin: 105px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.kids-vacation-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.kids-vacation-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: 1000px;
+    margin: 20px 0 20px 0;
+}
+.kids-vacation-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.kids-vacation-cards-details h2{
+    font-size: medium;
+}
+.kids-vacation-cards-details p{
+    font-size: medium;
+}
+.kids-vacation-cards-details h3{
+    font-size: medium;
+}
+.kids-vacation-cards-details img{
+    object-fit: cover;
+    width: 300px;
+}

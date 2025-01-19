@@ -2,19 +2,19 @@
 
 
 
-/*-------------------------------------------------------FS PAGE--------------------------------------------*/
-.FS-collection{
+/*-------------------------------------------------------MN PAGE--------------------------------------------*/
+.MN-collection{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
 }
-.FS-wrapper{
+.MN-wrapper{
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
-.FS-cards{
+.MN-cards{
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -23,27 +23,27 @@
     gap: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.FS-cards img{
+.MN-cards img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
-.FS-wrapper h2{
+.MN-wrapper h2{
     font-size: small;
     text-align: center;
 }
-.FS-wrapper h2:hover{
+.MN-wrapper h2:hover{
     color: green;
 }
-.FS-wrapper a{
+.MN-wrapper a{
     text-decoration: none;
     color: black;
 }
-.FS-wrapper a:hover{
+.MN-wrapper a:hover{
     color: #3ad83a;
 }
-.FS-collection h1{
+.MN-collection h1{
     text-align: center;
     white-space: nowrap;
     margin: 20px 0 0 0;
@@ -52,17 +52,17 @@
     cursor: pointer;
 }
 
-.trending-FS-title h1{
+.trending-MN-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-Trending-sneakers{
+.MN-Trending-sneakers{
     margin: 10px 5px 20px 5px;
 }
-.FS-trending-column{
+.MN-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -70,22 +70,22 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-trending-cards-details{
+.MN-trending-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-trending-cards-details h2{
+.MN-trending-cards-details h2{
     font-size: medium;
 }
-.FS-trending-cards-details p{
+.MN-trending-cards-details p{
     font-size: medium;
 }
-.FS-trending-cards-details h3{
+.MN-trending-cards-details h3{
     font-size: medium;
 }
-.FS-trending-cards-details img{
+.MN-trending-cards-details img{
     object-fit: cover;
     width: 300px;
 }
@@ -94,17 +94,17 @@
 
 
 
-.FS-sport-title h1{
+.MN-shoe-title h1{
     margin: 105px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-sport-sneakers{
+.MN-shoe{
     margin: 10px 5px 20px 5px;
 }
-.FS-sport-column{
+.MN-shoe-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -112,39 +112,39 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-sport-cards-details{
+.MN-shoe-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-sport-cards-details h2{
+.MN-shoe-cards-details h2{
     font-size: medium;
 }
-.FS-sport-cards-details p{
+.MN-shoe-cards-details p{
     font-size: medium;
 }
-.FS-sport-cards-details h3{
+.MN-shoe-cards-details h3{
     font-size: medium;
 }
-.FS-sport-cards-details img{
+.MN-shoe-cards-details img{
     object-fit: cover;
     width: 300px;
 }
 
 
 
-.FS-vacation-title h1{
+.MN-boots-title h1{
     margin: 105px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-vacation-sneakers{
+.MN-boots{
     margin: 10px 5px 20px 5px;
 }
-.FS-vacation-column{
+.MN-boots-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -152,22 +152,22 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-vacation-cards-details{
+.MN-boots-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-vacation-cards-details h2{
+.MN-boots-cards-details h2{
     font-size: medium;
 }
-.FS-vacation-cards-details p{
+.MN-boots-cards-details p{
     font-size: medium;
 }
-.FS-vacation-cards-details h3{
+.MN-boots-cards-details h3{
     font-size: medium;
 }
-.FS-vacation-cards-details img{
+.MN-boots-cards-details img{
     object-fit: cover;
     width: 300px;
 }

@@ -1,20 +1,16 @@
-
-
-
-
-/*-------------------------------------------------------FS PAGE--------------------------------------------*/
-.FS-collection{
+/*-------------------------------------------------------BT PAGE--------------------------------------------*/
+.BT-collection{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
 }
-.FS-wrapper{
+.BT-wrapper{
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
-.FS-cards{
+.BT-cards{
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -23,27 +19,27 @@
     gap: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.FS-cards img{
+.BT-cards img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
-.FS-wrapper h2{
+.BT-wrapper h2{
     font-size: small;
     text-align: center;
 }
-.FS-wrapper h2:hover{
+.BT-wrapper h2:hover{
     color: green;
 }
-.FS-wrapper a{
+.BT-wrapper a{
     text-decoration: none;
     color: black;
 }
-.FS-wrapper a:hover{
+.BT-wrapper a:hover{
     color: #3ad83a;
 }
-.FS-collection h1{
+.BT-collection h1{
     text-align: center;
     white-space: nowrap;
     margin: 20px 0 0 0;
@@ -52,17 +48,17 @@
     cursor: pointer;
 }
 
-.trending-FS-title h1{
+.trending-MB-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-Trending-sneakers{
+.MB-Trending-sneakers{
     margin: 10px 5px 20px 5px;
 }
-.FS-trending-column{
+.MB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -70,41 +66,39 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-trending-cards-details{
+.MB-trending-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-trending-cards-details h2{
+.MB-trending-cards-details h2{
     font-size: medium;
 }
-.FS-trending-cards-details p{
+.MB-trending-cards-details p{
     font-size: medium;
 }
-.FS-trending-cards-details h3{
+.MB-trending-cards-details h3{
     font-size: medium;
 }
-.FS-trending-cards-details img{
+.MB-trending-cards-details img{
     object-fit: cover;
     width: 300px;
 }
 
 
 
-
-
-.FS-sport-title h1{
+.BT-female-title h1{
     margin: 105px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-sport-sneakers{
+.BT-female-sneakers{
     margin: 10px 5px 20px 5px;
 }
-.FS-sport-column{
+.BT-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -112,39 +106,39 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-sport-cards-details{
+.BT-female-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-sport-cards-details h2{
+.BT-female-cards-details h2{
     font-size: medium;
 }
-.FS-sport-cards-details p{
+.BT-female-cards-details p{
     font-size: medium;
 }
-.FS-sport-cards-details h3{
+.BT-female-cards-details h3{
     font-size: medium;
 }
-.FS-sport-cards-details img{
+.BT-female-cards-details img{
     object-fit: cover;
     width: 300px;
 }
 
 
 
-.FS-vacation-title h1{
+.BT-kids-title h1{
     margin: 105px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.FS-vacation-sneakers{
+.BT-kids-sneakers{
     margin: 10px 5px 20px 5px;
 }
-.FS-vacation-column{
+.BT-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -152,22 +146,22 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.FS-vacation-cards-details{
+.BT-kids-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.FS-vacation-cards-details h2{
+.BT-kids-cards-details h2{
     font-size: medium;
 }
-.FS-vacation-cards-details p{
+.BT-kids-cards-details p{
     font-size: medium;
 }
-.FS-vacation-cards-details h3{
+.BT-kids-cards-details h3{
     font-size: medium;
 }
-.FS-vacation-cards-details img{
+.BT-kids-cards-details img{
     object-fit: cover;
     width: 300px;
 }

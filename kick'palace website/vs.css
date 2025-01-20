@@ -72,18 +72,16 @@
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.VS-trending-cards-details h2{
+.VS-trending-cards-details{
     font-size: medium;
-}
-.VS-trending-cards-details p{
-    font-size: medium;
-}
-.VS-trending-cards-details h3{
-    font-size: medium;
+    line-height: 1.5;
+    padding: 10px 10px 10px ;
+
 }
 .VS-trending-cards-details img{
     object-fit: cover;
     width: 300px;
+    height: 300px;
 }
 .VS-female-title h1{
     margin: 105px 55rem 30px ;
@@ -109,13 +107,9 @@
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.VS-female-cards-details h2{
-    font-size: medium;
-}
-.VS-female-cards-details p{
-    font-size: medium;
-}
-.VS-female-cards-details h3{
+.VS-female-cards-details{
+    line-height: 1.5;
+    padding: 10px 10px 10px ;
     font-size: medium;
 }
 .VS-female-cards-details img{
@@ -125,17 +119,17 @@
 
 
 
-.VS-vacation-title h1{
+.VS-kids-title h1{
     margin: 105px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.VS-vacation-sneakers{
+.VS-kids-sneakers{
     margin: 10px 5px 20px 5px;
 }
-.VS-vacation-column{
+.VS-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
@@ -143,22 +137,19 @@
     height: 1000px;
     margin: 20px 0 20px 0;
 }
-.VS-vacation-cards-details{
+.VS-kids-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.VS-vacation-cards-details h2{
-    font-size: medium;
-}
-.VS-vacation-cards-details p{
-    font-size: medium;
-}
-.VS-vacation-cards-details h3{
-    font-size: medium;
-}
-.VS-vacation-cards-details img{
+.VS-kids-cards-details img{
     object-fit: cover;
     width: 300px;
+    height: 300px;
+}
+.VS-kids-details{
+    font-size: medium;
+    line-height: 1.5;
+    padding: 10px 10px 10px;
 }

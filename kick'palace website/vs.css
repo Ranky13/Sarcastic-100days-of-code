@@ -48,108 +48,114 @@
     cursor: pointer;
 }
 
-.trending-VS-title h1{
+.VS-men-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.VS-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.VS-trending-column{
+.VS-men-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.VS-trending-cards-details{
-    overflow: hidden;
+.VS-men-card-details{
+    display: flex;
+}
+.VS-men-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.VS-trending-cards-details{
-    font-size: medium;
-    line-height: 1.5;
-    padding: 10px 10px 10px ;
+.VS-men-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.VS-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.VS-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
 
-}
-.VS-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
-}
+
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
+
 .VS-female-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.VS-female-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .VS-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.VS-female-cards-details{
-    overflow: hidden;
+.VS-female-card-details{
+    display: flex;
+}
+.VS-female-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.VS-female-cards-details{
-    line-height: 1.5;
-    padding: 10px 10px 10px ;
-    font-size: medium;
-}
-.VS-female-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.VS-female-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
 
-
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
 .VS-kids-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.VS-kids-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .VS-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.VS-kids-cards-details{
-    overflow: hidden;
+.VS-kids-card-details{
+    display: flex;
+}
+.VS-kids-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.VS-kids-cards-details img{
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 .VS-kids-details{
-    font-size: medium;
-    line-height: 1.5;
-    padding: 10px 10px 10px;
+    padding: 40px 10px;
+    line-height: 2.5;
 }

@@ -59,116 +59,107 @@
     text-align: center;
     left: 50%;
 }
-.FS-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
 .FS-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.FS-trending-cards-details{
-    overflow: hidden;
+.FS-trending-card-details{
+    display: flex;
+}
+.FS-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.FS-trending-cards-details h2{
-    font-size: medium;
+.FS-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.FS-trending-cards-details p{
-    font-size: medium;
+.FS-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
 }
-.FS-trending-cards-details h3{
-    font-size: medium;
-}
-.FS-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.FS-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
 
 
-
-
+/*-----------------------------------------------------sport SECTION-------------------------------------------------------*/
 
 .FS-sport-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.FS-sport-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .FS-sport-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.FS-sport-cards-details{
-    overflow: hidden;
+.FS-sport-card-details{
+    display: flex;
+}
+.FS-sport-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.FS-sport-cards-details h2{
-    font-size: medium;
-}
-.FS-sport-cards-details p{
-    font-size: medium;
-}
-.FS-sport-cards-details h3{
-    font-size: medium;
-}
-.FS-sport-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.FS-sport-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
 
-
+/*-----------------------------------------------------vacation SECTION-------------------------------------------------------*/
 .FS-vacation-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.FS-vacation-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .FS-vacation-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.FS-vacation-cards-details{
-    overflow: hidden;
+.FS-vacation-card-details{
+    display: flex;
+}
+.FS-vacation-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.FS-vacation-cards-details h2{
-    font-size: medium;
+.FS-vacation-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.FS-vacation-cards-details p{
-    font-size: medium;
-}
-.FS-vacation-cards-details h3{
-    font-size: medium;
-}
-.FS-vacation-cards-details img{
-    object-fit: cover;
-    width: 300px;
-}
-

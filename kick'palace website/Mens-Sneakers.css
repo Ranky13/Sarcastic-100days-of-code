@@ -59,115 +59,107 @@
     text-align: center;
     left: 50%;
 }
-.MN-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
 .MN-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.MN-trending-cards-details{
-    overflow: hidden;
+.MN-trending-card-details{
+    display: flex;
+}
+.MN-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.MN-trending-cards-details h2{
-    font-size: medium;
+.MN-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.MN-trending-cards-details p{
-    font-size: medium;
+.MN-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
 }
-.MN-trending-cards-details h3{
-    font-size: medium;
-}
-.MN-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.MN-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
 
 
-
-
+/*-----------------------------------------------------shoe SECTION-------------------------------------------------------*/
 
 .MN-shoe-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.MN-shoe{
-    margin: 10px 5px 20px 5px;
 }
 .MN-shoe-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.MN-shoe-cards-details{
-    overflow: hidden;
+.MN-shoe-card-details{
+    display: flex;
+}
+.MN-shoe-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.MN-shoe-cards-details h2{
-    font-size: medium;
-}
-.MN-shoe-cards-details p{
-    font-size: medium;
-}
-.MN-shoe-cards-details h3{
-    font-size: medium;
-}
-.MN-shoe-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.MN-shoe-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
 
-
+/*-----------------------------------------------------boots SECTION-------------------------------------------------------*/
 .MN-boots-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.MN-boots{
-    margin: 10px 5px 20px 5px;
 }
 .MN-boots-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.MN-boots-cards-details{
-    overflow: hidden;
+.MN-boots-card-details{
+    display: flex;
+}
+.MN-boots-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.MN-boots-cards-details h2{
-    font-size: medium;
-}
-.MN-boots-cards-details p{
-    font-size: medium;
-}
-.MN-boots-cards-details h3{
-    font-size: medium;
-}
-.MN-boots-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.MN-boots-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }

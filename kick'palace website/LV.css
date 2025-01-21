@@ -49,116 +49,113 @@
 }
 
 .trending-LV-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.LV-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .LV-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.LV-trending-cards-details{
-    overflow: hidden;
+.LV-trending-card-details{
+    display: flex;
+}
+.LV-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.LV-trending-cards-details h2{
-    font-size: medium;
+.LV-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.LV-trending-cards-details p{
-    font-size: medium;
+.LV-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
 }
-.LV-trending-cards-details h3{
-    font-size: medium;
+.LV-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
-.LV-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
-}
+
+
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
+
 .LV-female-title h1{
-    margin: 105px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.LV-female-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .LV-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.LV-female-cards-details{
-    overflow: hidden;
+.LV-female-card-details{
+    display: flex;
+}
+.LV-female-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.LV-female-cards-details h2{
-    font-size: medium;
-}
-.LV-female-cards-details p{
-    font-size: medium;
-}
-.LV-female-cards-details h3{
-    font-size: medium;
-}
-.LV-female-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.LV-female-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
 
-
-.LV-vacation-title h1{
-    margin: 105px 55rem 30px ;
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.LV-kids-title h1{
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.LV-vacation-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.LV-vacation-column{
+.LV-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.LV-vacation-cards-details{
-    overflow: hidden;
+.LV-kids-card-details{
+    display: flex;
+}
+.LV-kids-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.LV-vacation-cards-details h2{
-    font-size: medium;
-}
-.LV-vacation-cards-details p{
-    font-size: medium;
-}
-.LV-vacation-cards-details h3{
-    font-size: medium;
-}
-.LV-vacation-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.LV-kids-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }

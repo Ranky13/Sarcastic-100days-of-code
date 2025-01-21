@@ -47,6 +47,7 @@
     left: 46%;
     cursor: pointer;
 }
+/*-----------------------------------------------------MALE SECTION-------------------------------------------------------*/
 .NB-trending-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
@@ -54,131 +55,107 @@
     text-align: center;
     left: 50%;
 }
-.NB-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
 .NB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.NB-trending-cards-details{
-    overflow: hidden;
+.NB-trending-card-details{
+    display: flex;
+}
+.NB-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.NB-trending-details h2{
-    font-size: medium;
-}
-.NB-trending-details p{
-    font-size: medium;
-}
-.NB-trending-details h3{
-    font-size: medium;
-}
-.NB-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 .NB-trending-details{
-    padding: 5px 10px 5px;
+    padding: 40px 10px;
+    line-height: 2.5;
 }
+.NB-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.NB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
+
 .NB-female-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.NB-female-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .NB-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.NB-female-cards-details{
-    overflow: hidden;
+.NB-female-card-details{
+    display: flex;
+}
+.NB-female-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.NB-female-details h2{
-    font-size: medium;
-}
-.NB-female-details p{
-    font-size: medium;
-}
-.NB-female-details h3{
-    font-size: medium;
-}
-.NB-female-cards-details img{
-    object-fit: cover;
-    width: 300px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 .NB-female-details{
-    padding: 5px 10px 5px;
-}
-.NB-female-details h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
-.NB-Kids-title h1{
+
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.NB-kids-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.NB-Kids-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.NB-Kids-column{
+.NB-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.NB-Kids-cards-details{
-    overflow: hidden;
+.NB-kids-card-details{
+    display: flex;
+}
+.NB-kids-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.NB-Kids-details h2{
-    font-size: medium;
-}
-.NB-Kids-details p{
-    font-size: medium;
-}
-.NB-Kids-details h3{
-    font-size: medium;
-}
-.NB-Kids-cards-details img{
-    object-fit: cover;
-    width: 300px;
-}
-.NB-Kids-details{
-    padding: 5px 10px 5px;
-}
-.NB-Kids-details h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+.NB-kids-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }

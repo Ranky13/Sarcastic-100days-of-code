@@ -55,115 +55,107 @@
     text-align: center;
     left: 50%;
 }
-.PM-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.PM-trending-column{
+.Puma-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.PM-trending-cards-details{
-    overflow: hidden;
+.Puma-trending-card-details{
+    display: flex;
+}
+.Puma-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.PM-trending-cards-details h2{
-    font-size: medium;
+.Puma-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.PM-trending-cards-details p{
-    font-size: medium;
+.Puma-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
 }
-.PM-trending-cards-details h3{
-    font-size: medium;
-}
-.PM-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.Puma-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
 
 
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
 
-
-
-.PM-female-title h1{
-    margin: 105px 55rem 30px ;
+.Puma-female-title h1{
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.PM-female-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.PM-female-column{
+.Puma-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.PM-female-cards-details{
-    overflow: hidden;
+.Puma-female-card-details{
+    display: flex;
+}
+.Puma-female-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.PM-female-cards-details h2{
-    font-size: medium;
-}
-.PM-female-cards-details p{
-    font-size: medium;
-}
-.PM-female-cards-details h3{
-    font-size: medium;
-}
-.PM-female-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.Puma-female-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
 
-
-.Puma-Kids-title h1{
-    margin: 105px 55rem 30px ;
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.Puma-kids-title h1{
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.Puma-Kids-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.PM-Kids-column{
+.Puma-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.PM-Kids-cards-details{
-    overflow: hidden;
+.Puma-kids-card-details{
+    display: flex;
+}
+.Puma-kids-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.PM-Kids-cards-details h2{
-    font-size: medium;
-}
-.PM-Kids-cards-details p{
-    font-size: medium;
-}
-.PM-Kids-cards-details h3{
-    font-size: medium;
-}
-.PM-Kids-cards-details img{
-    object-fit: cover;
-    width: 300px;
+.Puma-kids-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }

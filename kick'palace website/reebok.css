@@ -1,5 +1,5 @@
 
-.nike-banner{
+.RBK-banner{
     width: 100%;
     height: 300px;
     background: #f8eed2;
@@ -7,7 +7,7 @@
     padding: 50px 150px ;
     box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
 }
-.nike-banner img{
+.RBK-banner img{
     width: 290px;
     height: 290px;
     top: 12%;
@@ -15,13 +15,13 @@
     position: absolute;
     filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
 }
-.nike-banner h1{
+.RBK-banner h1{
     font-size: 3rem;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     color: green;
 }
-.nike-banner button{
+.RBK-banner button{
     width: 100px;
     height: 50px;
     margin: 30px 60px;
@@ -32,7 +32,7 @@
     cursor: pointer;
     font-size: medium;
 }
-.nike-banner button:hover{
+.RBK-banner button:hover{
     color: #baf3ba;
 }
 .Reebok-collections{
@@ -83,138 +83,115 @@
     left: 46%;
     cursor: pointer;
 }
-.Reebok-trending-title h1{
+
+.RBK-trending-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.RBK-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .RBK-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.RBK-trending-cards-details{
-    overflow: hidden;
+.RBK-trending-card-details{
+    display: flex;
+}
+.RBK-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.RBK-trending-details h2{
-    font-size: medium;
-}
-.RBK-trending-details p{
-    font-size: medium;
-}
-.RBK-trending-details h3{
-    font-size: medium;
-}
-.RBK-trending-cards-details img{
-    object-fit: cover;
-    width: 300px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 .RBK-trending-details{
-    padding: 5px 10px 5px;
+    padding: 40px 10px;
+    line-height: 2.5;
 }
+.RBK-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.RBK-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
+
 .RBK-female-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
-}
-.RBK-female-sneakers{
-    margin: 10px 5px 20px 5px;
 }
 .RBK-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.RBK-female-cards-details{
-    overflow: hidden;
+.RBK-female-card-details{
+    display: flex;
+}
+.RBK-female-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.RBK-female-details h2{
-    font-size: medium;
-}
-.RBK-female-details p{
-    font-size: medium;
-}
-.RBK-female-details h3{
-    font-size: medium;
-}
-.RBK-female-cards-details img{
-    object-fit: cover;
-    width: 300px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 .RBK-female-details{
-    padding: 5px 10px 5px;
-}
-.RBK-female-details h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+    padding: 40px 10px;
+    line-height: 2.5;
 }
 
-.RBK-Kids-title h1{
+
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.RBK-kids-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.RBK-Kids-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.RBK-Kids-column{
+.RBK-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     gap: 20px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 0 20px 0;
 }
-.RBK-Kids-cards-details{
-    overflow: hidden;
+.RBK-kids-card-details{
+    display: flex;
+}
+.RBK-kids-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
 }
-.RBK-Kids-details h2{
-    font-size: medium;
-}
-.RBK-Kids-details p{
-    font-size: medium;
-}
-.RBK-Kids-details h3{
-    font-size: medium;
-}
-.RBK-Kids-cards-details img{
-    object-fit: cover;
-    width: 300px;
-}
-.RBK-Kids-details{
-    padding: 5px 10px 5px;
-}
-.RBK-Kids-details h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+.RBK-kids-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }

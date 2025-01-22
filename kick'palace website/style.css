@@ -350,15 +350,10 @@ color: black;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.trending-cards-details h2{
+.trending-cards-details{
     font-size: medium;
 }
-.trending-cards-details p{
-    font-size: medium;
-}
-.trending-cards-details h3{
-    font-size: medium;
-}
+
 .trending-column img{
     object-fit: cover;
     width: 100%;
@@ -420,7 +415,7 @@ color: black;
 .size-headline{
     margin: 10px 10px;
     cursor:default;
-    color: #f0cd6e;
+    color: #3ad83a;
 }
 
 /*------------------------FEMLE SECTION-------------------------------------------*/

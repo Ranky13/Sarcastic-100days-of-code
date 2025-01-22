@@ -57,14 +57,16 @@
 }
 .Puma-trending-column{
     display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    grid-template-columns: repeat(4,2fr);
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 50px 0;
 }
 .Puma-trending-card-details{
     display: flex;
+    overflow: hidden;
+
 }
 .Puma-trending-column-details{
     border-radius: 20px;
@@ -72,17 +74,20 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     padding-bottom: 10px;
     padding-right: 10px;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 .Puma-trending-details{
     padding: 40px 10px;
     line-height: 2.5;
+    font-size: medium;
 }
 .Puma-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 3px 10px;
 }
 .Puma-variants img{
     height: 50px;
@@ -90,72 +95,13 @@
     border: 2px solid grey;
     cursor: pointer;
 }
-
-
-/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
-
-.Puma-female-title h1{
-    margin: 100px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+.Puma-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
 }
-.Puma-female-column{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: fit-content;
-    margin: 40px 0 20px 0;
-}
-.Puma-female-card-details{
-    display: flex;
-}
-.Puma-female-column-details{
-    border-radius: 20px;
-    border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.Puma-female-details{
-    padding: 40px 10px;
-    line-height: 2.5;
-}
-
-
-/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
-.Puma-kids-title h1{
-    margin: 95px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
-}
-.Puma-kids-column{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: fit-content;
-    margin: 40px 0 20px 0;
-}
-.Puma-kids-card-details{
-    display: flex;
-}
-.Puma-kids-column-details{
-    border-radius: 20px;
-    border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.Puma-kids-details{
-    padding: 40px 10px;
-    line-height: 2.5;
+.Puma-trending-column-details:hover{
+    transform: scale(1.1)
 }

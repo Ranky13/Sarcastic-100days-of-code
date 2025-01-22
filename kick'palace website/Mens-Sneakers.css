@@ -70,6 +70,11 @@
 .MN-trending-card-details{
     display: flex;
 }
+.MN-trending-card-details img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
 .MN-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
@@ -129,6 +134,11 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.MN-shoe-card-details img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
 
 
 /*-----------------------------------------------------boots SECTION-------------------------------------------------------*/
@@ -150,6 +160,10 @@
 .MN-boots-card-details{
     display: flex;
 }
+.MN-boots-card-details img{
+    object-fit: cover;
+    height: 30px;
+}
 .MN-boots-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
@@ -162,4 +176,9 @@
 .MN-boots-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.MN-boots-card-details img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
 }

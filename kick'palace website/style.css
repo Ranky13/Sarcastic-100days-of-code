@@ -332,16 +332,16 @@ color: black;
     margin: 10px 5px 20px 5px;
 }
 .trending-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 45px 55rem 50px ;
     white-space: nowrap;
     font-size: 2rem;
 }
 .trending-column{
     display: grid;
     grid-template-columns: repeat(6,2fr);
-    gap: 20px;
-    width: fit-content;
-    height: 1000px;
+    gap: 50px;
+    width: 100%;
+    height: fit-content;
     margin: 20px 0 10px 0;
 }
 .trending-cards-details{
@@ -349,6 +349,9 @@ color: black;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.trending-column .trending-cards-details:hover{
+    transform: scale(1.1);
 }
 .trending-cards-details{
     font-size: medium;
@@ -360,7 +363,7 @@ color: black;
     height: 300px;
 }
 .trending-details{
-    padding: 5px 10px 2px;
+    padding: 5px 10px 10px;
     line-height: 1.5;
 }
 .buy-button{
@@ -418,12 +421,12 @@ color: black;
     color: #3ad83a;
 }
 
-/*------------------------FEMLE SECTION-------------------------------------------*/
+/*------------------------FEMALE SECTION-------------------------------------------*/
 .female-sneakers{
     margin: 10px 5px 20px 5px;
 }
 .female-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 45px 55rem 50px ;
     white-space: nowrap;
     font-size: 2rem;
 }
@@ -433,26 +436,16 @@ color: black;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
 }
-.female-title h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 2rem;
-}
+
 .female-column{
     display: grid;
     grid-template-columns: repeat(6,2fr);
-    gap: 20px;
-    width: fit-content;
-    height: 1000px;
+    gap: 50px;
+    width: 100%;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.female-cards-details h2{
-    font-size: medium;
-}
-.female-cards-details p{
-    font-size: medium;
-}
-.female-cards-details h3{
+.female-cards-details{
     font-size: medium;
 }
 .female-cards-details img{
@@ -464,14 +457,16 @@ color: black;
     padding: 5px 10px 10px;
     line-height: 1.5;
 }
-
+.female-column .female-cards-details:hover{
+    transform: scale(1.1);
+}
 
 /*----------------KIDS SECTION-------------------------------------*/
 .Kids-sneakers{
-    margin: 10px 5px 20px 5px;
+    margin: 10px 5px 0px 5px;
 }
 .Kids-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 45px 55rem 70px ;
     white-space: nowrap;
     font-size: 2rem;
 }
@@ -480,36 +475,29 @@ color: black;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    font-size: medium;
 }
-.Kids-title h1{
-    margin: 45px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 2rem;
-}
+
 .Kids-column{
     display: grid;
     grid-template-columns: repeat(6,2fr);
-    gap: 20px;
+    gap: 50px;
     width: fit-content;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 20px 0 50px 0;
 }
-.Kids-cards-details h2{
-    font-size: medium;
-}
-.Kids-cards-details p{
-    font-size: medium;
-}
-.Kids-cards-details h3{
-    font-size: medium;
-}
+
 .Kids-cards-details img{
     object-fit: cover;
     width: 100%;
+    height: 300px;
 }
 .kids-details{
-    padding: 5px 10px 5px;
+    padding: 5px 10px 10px;
     line-height: 1.5;
+}
+.Kids-column .Kids-cards-details:hover{
+    transform: scale(1.1);
 }
 
 
@@ -571,4 +559,16 @@ color: black;
     position: absolute;
     right: 10%;
     gap: 10px;
+}
+
+.contact-container{
+    width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+   
 }

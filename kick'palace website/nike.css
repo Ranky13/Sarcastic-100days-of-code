@@ -94,10 +94,11 @@
 .nike-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 20px;
+
 }
 .nike-trending-card-details{
     display: flex;
@@ -110,6 +111,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
 }
 .nike-trending-details{
     padding: 40px 10px;
@@ -126,7 +128,16 @@
     border: 2px solid grey;
     cursor: pointer;
 }
-
+.nike-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
 
 /*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
 
@@ -140,10 +151,11 @@
 .nike-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 20px;
+    
 }
 .nike-female-card-details{
     display: flex;
@@ -156,10 +168,21 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
 }
 .nike-female-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.nike-female-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-female-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }
 
 
@@ -174,10 +197,10 @@
 .nike-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 20px;
 }
 .nike-kids-card-details{
     display: flex;
@@ -190,8 +213,19 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
 }
 .nike-kids-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.nike-kids-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-kids-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }

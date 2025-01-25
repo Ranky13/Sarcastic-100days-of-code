@@ -53,7 +53,7 @@
 }
 
 .trending-FS-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 45px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -62,10 +62,10 @@
 .FS-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 10px ;
 }
 .FS-trending-card-details{
     display: flex;
@@ -94,12 +94,21 @@
     border: 2px solid grey;
     cursor: pointer;
 }
-
+.FS-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.FS-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
 
 /*-----------------------------------------------------sport SECTION-------------------------------------------------------*/
 
 .FS-sport-title h1{
-    margin: 100px 55rem 30px ;
+    margin: 100px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -108,10 +117,10 @@
 .FS-sport-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 10px;
 }
 .FS-sport-card-details{
     display: flex;
@@ -129,11 +138,20 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
-
+.FS-sport-column-details:hover{
+    transform: scale(1.1)
+}
+.FS-sport-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
 
 /*-----------------------------------------------------vacation SECTION-------------------------------------------------------*/
 .FS-vacation-title h1{
-    margin: 95px 55rem 30px ;
+    margin: 95px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -142,13 +160,15 @@
 .FS-vacation-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 10px ;
+   
 }
 .FS-vacation-card-details{
     display: flex;
+
 }
 .FS-vacation-column-details{
     border-radius: 20px;
@@ -158,8 +178,19 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
 }
 .FS-vacation-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.FS-vacation-column-details:hover{
+    transform: scale(1.1);
+}
+.FS-vacation-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }

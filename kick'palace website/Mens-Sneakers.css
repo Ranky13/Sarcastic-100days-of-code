@@ -65,15 +65,10 @@
     gap: 20px;
     width: 100%;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 20px;
 }
 .MN-trending-card-details{
     display: flex;
-}
-.MN-trending-card-details img{
-    object-fit: cover;
-    height: 400px;
-    width: 400px;
 }
 .MN-trending-column-details{
     border-radius: 20px;
@@ -83,6 +78,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
 }
 .MN-trending-details{
     padding: 40px 10px;
@@ -101,84 +97,13 @@
 }
 
 
-/*-----------------------------------------------------shoe SECTION-------------------------------------------------------*/
-
-.MN-shoe-title h1{
-    margin: 100px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
+.MN-trending-column-details:hover{
+    transform: scale(1.1)
 }
-.MN-shoe-column{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: fit-content;
-    margin: 40px 0 20px 0;
-}
-.MN-shoe-card-details{
-    display: flex;
-}
-.MN-shoe-column-details{
-    border-radius: 20px;
-    border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.MN-shoe-details{
-    padding: 40px 10px;
-    line-height: 2.5;
-}
-.MN-shoe-card-details img{
+.MN-trending-card-details img{
     object-fit: cover;
-    height: 400px;
-    width: 400px;
-}
-
-
-/*-----------------------------------------------------boots SECTION-------------------------------------------------------*/
-.MN-boots-title h1{
-    margin: 95px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
-}
-.MN-boots-column{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: fit-content;
-    margin: 40px 0 20px 0;
-}
-.MN-boots-card-details{
-    display: flex;
-}
-.MN-boots-card-details img{
-    object-fit: cover;
-    height: 30px;
-}
-.MN-boots-column-details{
-    border-radius: 20px;
-    border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.MN-boots-details{
-    padding: 40px 10px;
-    line-height: 2.5;
-}
-.MN-boots-card-details img{
-    object-fit: cover;
-    height: 400px;
-    width: 400px;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }

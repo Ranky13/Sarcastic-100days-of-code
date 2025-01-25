@@ -58,10 +58,10 @@
 .LV-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
+    gap: 70px;
+    width: fit-content;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .LV-trending-card-details{
     display: flex;
@@ -74,6 +74,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 40px 30px 20px 20px;
 }
 .LV-trending-details{
     padding: 40px 10px;
@@ -91,6 +92,17 @@
     cursor: pointer;
 }
 
+.LV-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.LV-trending-column-details:hover{
+    transform: scale(1.1)
+}
+
 
 /*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
 
@@ -104,10 +116,10 @@
 .LV-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
+    gap: 70px;
+    width: fit-content;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .LV-female-card-details{
     display: flex;
@@ -120,42 +132,21 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 40px 30px 20px 20px;
 }
 .LV-female-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
+.LV-female-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.LV-female-column-details:hover{
+    transform: scale(1.1);
+}
 
 
-/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
-.LV-kids-title h1{
-    margin: 95px 55rem 30px ;
-    white-space: nowrap;
-    font-size: 1.5rem;
-    text-align: center;
-    left: 50%;
-}
-.LV-kids-column{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: fit-content;
-    margin: 40px 0 20px 0;
-}
-.LV-kids-card-details{
-    display: flex;
-}
-.LV-kids-column-details{
-    border-radius: 20px;
-    border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.LV-kids-details{
-    padding: 40px 10px;
-    line-height: 2.5;
-}

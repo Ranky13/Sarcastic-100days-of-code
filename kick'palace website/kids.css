@@ -58,7 +58,7 @@
 .kids-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 20px 0 20px 0;
@@ -74,6 +74,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 30px 50px 10px;
 }
 .kids-trending-details{
     padding: 40px 10px;
@@ -91,6 +92,17 @@
     cursor: pointer;
 }
 
+.kids-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.kids-trending-column-details:hover{
+    transform: scale(1.1)
+}
+
 
 /*-----------------------------------------------------sandal SECTION-------------------------------------------------------*/
 
@@ -104,10 +116,10 @@
 .kids-sandal-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 0;
 }
 .kids-sandal-card-details{
     display: flex;
@@ -120,12 +132,22 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 40px 50px 10px;
 }
 .kids-sandal-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
-
+.kids-sandal-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.kids-sandal-column-details:hover{
+    transform: scale(1.1)
+}
 
 /*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
 .kids-boots-title h1{
@@ -138,10 +160,9 @@
 .kids-boots-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
+    gap: 70px;
+    width: fit-content;
     height: fit-content;
-    margin: 40px 0 20px 0;
 }
 .kids-boots-card-details{
     display: flex;
@@ -154,8 +175,20 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 30px 50px 10px;
 }
 .kids-boots-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
+.kids-boots-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.kids-boots-column-details:hover{
+    transform: scale(1.1)
+}
+

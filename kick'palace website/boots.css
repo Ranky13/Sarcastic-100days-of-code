@@ -48,120 +48,164 @@
     cursor: pointer;
 }
 
-.trending-MB-title h1{
+
+/*-------------------------------------------------------kids PAGE--------------------------------------------*/
+
+.trending-men-title h1{
     margin: 45px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.MB-Trending-sneakers{
-    margin: 10px 5px 20px 5px;
-}
 .MB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 70px;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     margin: 20px 0 20px 0;
 }
-.MB-trending-cards-details{
-    overflow: hidden;
+.MB-trending-card-details{
+    display: flex;
+}
+.MB-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 30px 50px 10px;
 }
-.MB-trending-cards-details h2{
-    font-size: medium;
+.MB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.MB-trending-cards-details p{
-    font-size: medium;
+.MB-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
 }
-.MB-trending-cards-details h3{
-    font-size: medium;
+.MB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
-.MB-trending-cards-details img{
+
+.MB-trending-card-details img{
     object-fit: cover;
-    width: 300px;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.MB-trending-column-details:hover{
+    transform: scale(1.1)
 }
 
 
+/*-----------------------------------------------------sandal SECTION-------------------------------------------------------*/
 
-.BT-female-title h1{
-    margin: 105px 55rem 30px ;
+.FB-trending-title h1{
+    margin: 100px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.BT-female-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.BT-female-column{
+.FB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 70px;
     width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    height: fit-content;
+    margin: 40px 20px 20px 0;
 }
-.BT-female-cards-details{
-    overflow: hidden;
+.FB-trending-card-details{
+    display: flex;
+}
+.FB-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 40px 50px 10px;
 }
-.BT-female-cards-details h2{
-    font-size: medium;
+.FB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.BT-female-cards-details p{
-    font-size: medium;
-}
-.BT-female-cards-details h3{
-    font-size: medium;
-}
-.BT-female-cards-details img{
+.FB-trending-card-details img{
     object-fit: cover;
-    width: 300px;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.FB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.FB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
 }
 
-
-
-.BT-kids-title h1{
-    margin: 105px 55rem 30px ;
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.KB-trending-title h1{
+    margin: 95px 55rem 30px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
     left: 50%;
 }
-.BT-kids-sneakers{
-    margin: 10px 5px 20px 5px;
-}
-.BT-kids-column{
+.KB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
-    height: 1000px;
-    margin: 20px 0 20px 0;
+    gap: 70px;
+    width: fit-content;
+    height: fit-content;
 }
-.BT-kids-cards-details{
-    overflow: hidden;
+.KB-trending-card-details{
+    display: flex;
+}
+.KB-trending-column-details{
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 30px 50px 10px;
 }
-.BT-kids-cards-details h2{
-    font-size: medium;
+.KB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
 }
-.BT-kids-cards-details p{
-    font-size: medium;
-}
-.BT-kids-cards-details h3{
-    font-size: medium;
-}
-.BT-kids-cards-details img{
+.KB-trending-card-details img{
     object-fit: cover;
-    width: 300px;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }
+.KB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.KB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+

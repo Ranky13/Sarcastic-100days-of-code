@@ -85,7 +85,7 @@
 }
 
 .RBK-trending-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 45px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -94,10 +94,10 @@
 .RBK-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 60px;
     width: 100%;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .RBK-trending-card-details{
     display: flex;
@@ -110,11 +110,20 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 30px 20px 10px;
 }
 .RBK-trending-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
+.RBK-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
 .RBK-variants{
     gap: 10px;
     display: flex;
@@ -127,11 +136,15 @@
     cursor: pointer;
 }
 
+.RBK-trending-column-details:hover{
+    transform: scale(1.1)
+}
+
 
 /*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
 
 .RBK-female-title h1{
-    margin: 100px 55rem 30px ;
+    margin: 100px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -140,10 +153,10 @@
 .RBK-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 60px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .RBK-female-card-details{
     display: flex;
@@ -156,16 +169,27 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 30px 20px 10px;
 }
 .RBK-female-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
+.RBK-female-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.RBK-female-column-details:hover{
+    transform: scale(1.1)
+}
 
 
 /*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
 .RBK-kids-title h1{
-    margin: 45px 55rem 30px ;
+    margin: 65px 55rem 50px ;
     white-space: nowrap;
     font-size: 1.5rem;
     text-align: center;
@@ -174,10 +198,10 @@
 .RBK-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 60px;
     width: 100%;
     height: fit-content;
-    margin: 40px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .RBK-kids-card-details{
     display: flex;
@@ -190,8 +214,19 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 30px 20px 10px;
 }
 .RBK-kids-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.RBK-kids-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.RBK-kids-column-details:hover{
+    transform: scale(1.1)
 }

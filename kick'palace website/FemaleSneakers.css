@@ -65,7 +65,7 @@
     gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 10px ;
+    margin: 20px 0 20px 0;
 }
 .FS-trending-card-details{
     display: flex;
@@ -120,7 +120,7 @@
     gap: 70px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 10px;
+    margin: 20px 0 20px 0;
 }
 .FS-sport-card-details{
     display: flex;
@@ -163,7 +163,7 @@
     gap: 50px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 10px ;
+    margin: 20px 0 20px 0;
    
 }
 .FS-vacation-card-details{

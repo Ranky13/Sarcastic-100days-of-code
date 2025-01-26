@@ -94,11 +94,10 @@
 .nike-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 50px;
+    gap: 20px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 20px 20px;
-
+    margin-right: 10px;
 }
 .nike-trending-card-details{
     display: flex;
@@ -111,7 +110,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 20px 20px 50px;
 }
 .nike-trending-details{
     padding: 40px 10px;
@@ -151,10 +150,10 @@
 .nike-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 50px;
+    gap: 20px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 20px 20px;
+    margin-right: 10px;
     
 }
 .nike-female-card-details{
@@ -168,7 +167,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 20px 20px 50px;
 }
 .nike-female-details{
     padding: 40px 10px;
@@ -197,10 +196,10 @@
 .nike-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 50px;
+    gap: 20px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 20px 20px;
+    margin-right: 10px;
 }
 .nike-kids-card-details{
     display: flex;
@@ -213,7 +212,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 20px 20px 50px;
 }
 .nike-kids-details{
     padding: 40px 10px;

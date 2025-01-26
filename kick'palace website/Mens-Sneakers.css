@@ -62,10 +62,9 @@
 .MN-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     height: fit-content;
-    margin: 40px 20px 20px 20px;
 }
 .MN-trending-card-details{
     display: flex;
@@ -78,7 +77,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 20px 30px 50px ;
 }
 .MN-trending-details{
     padding: 40px 10px;

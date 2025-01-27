@@ -105,3 +105,16 @@
 .Puma-trending-column-details:hover{
     transform: scale(1.1)
 }
+.last-column{
+    display: flex;
+}
+.bi{
+    cursor: pointer;
+}
+
+.bi-heart{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    margin-top: 10px;
+}

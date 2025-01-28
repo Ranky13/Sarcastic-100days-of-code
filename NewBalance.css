@@ -1,0 +1,100 @@
+
+.NB-collections{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.NB-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.NB-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.NB-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.NB-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.NB-wrapper h2:hover{
+    color: green;
+}
+.NB-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.NB-wrapper a:hover{
+    color: #3ad83a;
+}
+.NB-collections h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+}
+/*-----------------------------------------------------MALE SECTION-------------------------------------------------------*/
+.NB-trending-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.NB-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 20px 0;
+}
+.NB-trending-card-details{
+    display: flex;
+}
+.NB-trending-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 20px 50px 10px;
+}
+.NB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.NB-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.NB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+.NB-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}

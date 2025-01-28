@@ -39,6 +39,9 @@ body{
     width: 40px;
     height: 40px;
 }
+
+
+/*-----------------------------NAV LINKS SECTION----------------------------------*/
 .nav-links li{
     list-style: none;
 }
@@ -76,6 +79,7 @@ body{
     display: none;
     justify-content: space-between;
     gap: 10px;
+    padding: 10px 10px 10px 10px;
 }
 .nav-links ul li:hover .sub-categories{
     display: block;
@@ -84,12 +88,13 @@ body{
     margin-top: 5px;
     width: fit-content;
     border-radius: 10px;
-    padding: 5px 0px 5px 10px;
-   
 }
 .nav-links ul li:hover .sub-categories li a{
     color: white;;
-    padding: 0 0 ;
+    padding: 0 0 0 ;
+}
+.nav-links ul li .sub-categories{
+    padding: 10px 10px 10px 10px;
 }
 .nav-links ul li:hover .sub-categories ul{
     display: block;
@@ -97,9 +102,11 @@ body{
 }
 .nav-links ul li:hover .sub-categories ul li a:hover{
     color: #baf3ba;
-    padding: 10px 0px 10px;
     border-bottom: 1px solid #3ad83a;
 }
+
+
+/*-----------------------------BANNER SECTION----------------------------------*/
 .banner{
     width: 100%;
     height: 300px;
@@ -136,6 +143,10 @@ body{
 .banner button:hover{
     color: #baf3ba;
 }
+
+
+
+/*-----------------------------LATEST RELEASE SECTION---------------------------------*/
 .latest-collections{
     width: 100%;
     display: flex;
@@ -174,9 +185,17 @@ body{
     font-size: small;
     text-align: center;
 }
-.LT-wrapper h2:hover{
-    color: green;
+.LT-wrapper a{
+    text-decoration: none;
+    color: black;
 }
+.LT-wrapper a:hover{
+    color: #3ad83a;
+}
+
+
+
+/*-----------------------------SCROLL BAR SECTION----------------------------------*/
 .scroll-bar{
     display: flex;
     flex-direction: row;
@@ -302,58 +321,70 @@ color: black;
 .sort-by a:hover{
     background: rgba(128, 128, 128, 0.185);
 }
-.Trending-sneakers{
-    margin: 10px 0 20px;
+.rating > .bi{
+    color: orange;
+    cursor: pointer;
 }
-.title h1{
-    margin: 45px 55rem 30px ;
+
+
+/*-----------------------------TRENDING SECTION----------------------------------*/
+.Trending-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.trending-title h1{
+    margin: 45px 55rem 50px ;
     white-space: nowrap;
     font-size: 2rem;
 }
 .trending-column{
     display: grid;
-    grid-template-columns: repeat(5,2fr);
-    width: fit-content;
+    grid-template-columns: repeat(6,2fr);
+    gap: 50px;
+    width: 100%;
     height: fit-content;
-    gap: 20px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 10px 0;
 }
 .trending-cards-details{
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding: 0 0 1px 0;
 }
-.trending-cards-details:hover{
-    transform: scale(1.2) rotateY(5deg) translateZ(5px);
-    z-index: 1;
+.trending-column .trending-cards-details:hover{
+    transform: scale(1.1);
 }
+.trending-cards-details{
+    font-size: medium;
+}
+
 .trending-column img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
+    height: 300px;
 }
-.trending-cards-details p{
-    padding: 5px 10px 5px;
-}
-.trending-cards-details h2, h3{
-    padding: 5px 10px 5px;
+.trending-details{
+    padding: 5px 10px 10px;
+    line-height: 1.5;
 }
 .buy-button{
     width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 3px 5px 3px;
     border: 2px solid #ddd;
     border-radius: 10px;
     background: #3ad83a;
     color: white;
+    margin: 5px 5px 2px;
+    cursor: pointer;
 }
 .cart-button{
     width: 100px;
-    padding: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
     border: none;
     border-radius: 10px;
     background: #3ad83a;
     color: white;
+    margin: 5px 5px 2px;
+    cursor: pointer;
 
 }
 .cart-button:hover{
@@ -366,31 +397,178 @@ color: black;
     border: none;
     color: black;
 }
-.female-sneakers-column{
-    display: grid;
-    grid-template-columns: repeat(5,2fr);
-    width: fit-content;
-    height: fit-content;
-    gap: 20px;  
-    border: 4px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 18px;
+.sizes{
+    display: flex;
+    gap: 10px;
+    margin: 10px 20px;
 }
-.female-sneakers-column img{
-    object-fit: cover;
+.sizes span{
+    font-size: 20px;
+    border: 2px solid grey;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+.sizes span:hover{
+    background: rgb(175, 174, 174);
+    border: 1px solid black;
+    color: white;
+}
+.size-headline{
+    margin: 10px 10px;
+    cursor:default;
+    color: #3ad83a;
+}
+
+/*------------------------FEMALE SECTION-------------------------------------------*/
+.female-sneakers{
+    margin: 10px 5px 20px 5px;
+}
+.female-title h1{
+    margin: 45px 55rem 50px ;
+    white-space: nowrap;
+    font-size: 2rem;
 }
 .female-cards-details{
+    overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    padding: 0 0 10px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
 }
-.female-cards-details h3{
+
+.female-column{
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    gap: 50px;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 20px 0;
+}
+.female-cards-details{
+    font-size: medium;
+}
+.female-cards-details img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.female-details {
     padding: 5px 10px 10px;
+    line-height: 1.5;
 }
-.female-cards-details p{
+.female-column .female-cards-details:hover{
+    transform: scale(1.1);
+}
+
+/*----------------KIDS SECTION-------------------------------------*/
+.Kids-sneakers{
+    margin: 10px 5px 0px 5px;
+}
+.Kids-title h1{
+    margin: 45px 55rem 70px ;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.Kids-cards-details{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    font-size: medium;
+}
+
+.Kids-column{
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    gap: 50px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 0 50px 0;
+}
+
+.Kids-cards-details img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.kids-details{
     padding: 5px 10px 10px;
+    line-height: 1.5;
 }
-.female-cards-details h2{
-        padding: 5px 10px 10px;
+.Kids-column .Kids-cards-details:hover{
+    transform: scale(1.1);
+}
+
+
+/*-----------------------------FOOTER SECTION----------------------------------*/
+.footer-section{
+    background: rgb(37, 182, 37);
+}
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 50px;
+    line-height: 3;
+    color: white;
+}
+.footer-section h1{
+    color: white;
+}
+.footer-contents p:hover{
+    color:#3ad83a;
+}
+.brand hr{
+    outline: 2px solid green;
+}
+.footer-section a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-section a:hover{
+    color: #3ad83a;
+}
+.brand h1{
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.brand p{
+    cursor:initial ;
+}
+#footer-logo{
+    width: 50px;
+    height: 40px;
+}
+.bi{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copy-right{
+    display: flex;
+    padding: 30px 100px 30px;
+    gap: 500PX;
+    color: rgb(255, 255, 255);
+    outline: 5px solid green;
+}
+.payment-icons{
+    display: flex;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    right: 10%;
+    gap: 10px;
+}
+
+.contact-container{
+    width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+   
 }

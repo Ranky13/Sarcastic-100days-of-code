@@ -1,0 +1,211 @@
+/*-------------------------------------------------------BT PAGE--------------------------------------------*/
+.BT-collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.BT-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.BT-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.BT-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.BT-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.BT-wrapper h2:hover{
+    color: green;
+}
+.BT-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.BT-wrapper a:hover{
+    color: #3ad83a;
+}
+.BT-collection h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------------------kids PAGE--------------------------------------------*/
+
+.trending-men-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.MB-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 70px;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 20px 0;
+}
+.MB-trending-card-details{
+    display: flex;
+}
+.MB-trending-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 30px 50px 10px;
+}
+.MB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.MB-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.MB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+.MB-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.MB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+
+
+/*-----------------------------------------------------sandal SECTION-------------------------------------------------------*/
+
+.FB-trending-title h1{
+    margin: 100px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.FB-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 70px;
+    width: 100%;
+    height: fit-content;
+    margin: 40px 20px 20px 0;
+}
+.FB-trending-card-details{
+    display: flex;
+}
+.FB-trending-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 40px 50px 10px;
+}
+.FB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.FB-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.FB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.FB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.KB-trending-title h1{
+    margin: 95px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.KB-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 70px;
+    width: fit-content;
+    height: fit-content;
+}
+.KB-trending-card-details{
+    display: flex;
+}
+.KB-trending-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 30px 50px 10px;
+}
+.KB-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.KB-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.KB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.KB-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+

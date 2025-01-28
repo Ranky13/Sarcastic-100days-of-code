@@ -1,0 +1,230 @@
+
+/*----------------------NIKE PAGE START HERE--------------------*/
+.nike-banner{
+    width: 100%;
+    height: 300px;
+    background: #f8eed2;
+    border-radius: 15px;
+    padding: 50px 150px ;
+    box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
+}
+.nike-banner img{
+    width: 290px;
+    height: 290px;
+    top: 12%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
+}
+.nike-banner h1{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: green;
+}
+.nike-banner button{
+    width: 100px;
+    height: 50px;
+    margin: 30px 60px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: green;
+    cursor: pointer;
+    font-size: medium;
+}
+.nike-banner button:hover{
+    color: #baf3ba;
+}
+.nike-collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.NL-wrapper{
+    display: inline-block;
+    margin: 60px 10px 30px 0;
+}
+.NL-cards{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #8080802f;
+    margin: 20px 10px 5px 0;
+    gap: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.NL-cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.NL-wrapper h2{
+    font-size: small;
+    text-align: center;
+}
+.NL-wrapper h2:hover{
+    color: green;
+}
+.NL-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.NL-wrapper a:hover{
+    color: #3ad83a;
+}
+.nike-collection h1{
+    text-align: center;
+    white-space: nowrap;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+}
+.nike-trending-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.nike-trending-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+}
+.nike-trending-card-details{
+    display: flex;
+}
+.nike-trending-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 20px 50px;
+}
+.nike-trending-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.nike-variants{
+    gap: 10px;
+    display: flex;
+    margin: 10px 10px;
+}
+.nike-variants img{
+    height: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+.nike-trending-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+/*-----------------------------------------------------FEMALE SECTION-------------------------------------------------------*/
+
+.nike-female-title h1{
+    margin: 100px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.nike-female-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+    
+}
+.nike-female-card-details{
+    display: flex;
+}
+.nike-female-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 20px 50px;
+}
+.nike-female-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.nike-female-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-female-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+
+/*-----------------------------------------------------KIDS SECTION-------------------------------------------------------*/
+.nike-kids-title h1{
+    margin: 45px 55rem 30px ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 50%;
+}
+.nike-kids-column{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+}
+.nike-kids-card-details{
+    display: flex;
+}
+.nike-kids-column-details{
+    border-radius: 20px;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 20px 50px;
+}
+.nike-kids-details{
+    padding: 40px 10px;
+    line-height: 2.5;
+}
+.nike-kids-column-details:hover{
+    transform: scale(1.1)
+}
+.nike-kids-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}

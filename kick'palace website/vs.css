@@ -75,6 +75,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .VS-men-details{
     padding: 40px 10px;
@@ -133,6 +134,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .VS-female-details{
     padding: 40px 10px;
@@ -177,6 +179,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .VS-kids-details{
     padding: 40px 10px;
@@ -191,4 +194,26 @@
 }
 .VS-kids-column-details:hover{
     transform: scale(1.1)
+}
+
+
+.last-column{
+    display: flex;
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 80%;
+    margin-top: 20px;
+    color: black;
 }

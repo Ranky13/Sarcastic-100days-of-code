@@ -75,6 +75,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 30px 50px 10px;
+    position: relative;
 }
 .kids-trending-details{
     padding: 40px 10px;
@@ -133,6 +134,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 40px 50px 10px;
+    position: relative;
 }
 .kids-sandal-details{
     padding: 40px 10px;
@@ -176,6 +178,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 30px 50px 10px;
+    position: relative;
 }
 .kids-boots-details{
     padding: 40px 10px;
@@ -192,3 +195,24 @@
     transform: scale(1.1)
 }
 
+
+.last-column{
+    display: flex;
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 80%;
+    margin-top: 20px;
+    color: black;
+}

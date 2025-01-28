@@ -78,6 +78,8 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .FS-trending-details{
     padding: 40px 10px;
@@ -133,6 +135,8 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
+    margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .FS-sport-details{
     padding: 40px 10px;
@@ -179,6 +183,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 20px 50px 10px;
+    position: relative;
 }
 .FS-vacation-details{
     padding: 40px 10px;
@@ -193,4 +198,26 @@
     height: 250px;
     width: 250px;
     overflow: hidden;
+}
+
+
+.last-column{
+    display: flex;
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 80%;
+    margin-top: 20px;
+    color: black;
 }

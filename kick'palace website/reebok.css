@@ -94,7 +94,7 @@
 .RBK-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -110,7 +110,8 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-trending-details{
     padding: 40px 10px;
@@ -153,7 +154,7 @@
 .RBK-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -169,7 +170,8 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-female-details{
     padding: 40px 10px;
@@ -198,7 +200,7 @@
 .RBK-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -214,7 +216,8 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-kids-details{
     padding: 40px 10px;
@@ -229,4 +232,24 @@
 }
 .RBK-kids-column-details:hover{
     transform: scale(1.1)
+}
+.last-column{
+    display: flex;
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 80%;
+    margin-top: 20px;
+    color: black;
 }

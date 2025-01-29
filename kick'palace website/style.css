@@ -104,7 +104,13 @@ body{
     color: #baf3ba;
     border-bottom: 1px solid #3ad83a;
 }
-
+.bi-heart-fill{
+    color: #3ad83a;
+    font-size: 20px;
+}
+.bi-heart-fill:hover{
+    color: red;
+}
 
 /*-----------------------------BANNER SECTION----------------------------------*/
 .banner{
@@ -325,6 +331,7 @@ color: black;
     color: orange;
     cursor: pointer;
 }
+
 
 
 /*-----------------------------TRENDING SECTION----------------------------------*/

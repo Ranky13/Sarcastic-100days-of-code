@@ -120,7 +120,7 @@
 .nike-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .nike-variants img{
     height: 50px;
@@ -232,9 +232,6 @@
     overflow: hidden;
 }
 
-.last-column{
-    display: flex;
-}
 .bi{
     cursor: pointer;
 }
@@ -244,11 +241,10 @@
     position: absolute;
     margin-top: 10px;
 }
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
 .quantity{
-    font-size: 20px;
-    font-weight: 300;
-    position: absolute;
-    left: 80%;
-    margin-top: 20px;
-    color: black;
+    font-size: 22px;
 }

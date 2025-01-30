@@ -58,15 +58,16 @@
 .NB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
+    gap: 70px;
+    width: fit-content;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .NB-trending-card-details{
     display: flex;
 }
 .NB-trending-column-details{
+    position: relative;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -74,7 +75,7 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 40px 30px 20px 20px;
 }
 .NB-trending-details{
     padding: 40px 10px;
@@ -83,7 +84,7 @@
 .NB-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .NB-variants img{
     height: 50px;
@@ -97,4 +98,32 @@
     height: 300px;
     width: 300px;
     overflow: hidden;
+}
+
+.NB-trending-card-details img{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.NB-trending-column-details:hover{
+    transform: scale(1.1)
+}
+
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+    font-size: 22px;
 }

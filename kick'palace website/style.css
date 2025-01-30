@@ -428,6 +428,7 @@ color: black;
     color: #3ad83a;
 }
 
+
 /*------------------------FEMALE SECTION-------------------------------------------*/
 .female-sneakers{
     margin: 10px 5px 20px 5px;
@@ -575,7 +576,16 @@ color: black;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: center;   
+}
 
-   
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+    font-size: 22px;
+}
+.bi{
+    cursor: pointer;
 }

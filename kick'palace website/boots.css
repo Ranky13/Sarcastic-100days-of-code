@@ -78,6 +78,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 30px 50px 10px;
+    position: relative;
 }
 .MB-trending-details{
     padding: 40px 10px;
@@ -86,7 +87,7 @@
 .MB-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .MB-variants img{
     height: 50px;
@@ -136,6 +137,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 40px 50px 10px;
+    position: relative;
 }
 .FB-trending-details{
     padding: 40px 10px;
@@ -185,6 +187,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 30px 50px 10px;
+    position: relative;
 }
 .KB-trending-details{
     padding: 40px 10px;
@@ -206,6 +209,21 @@
     border: 2px solid grey;
     cursor: pointer;
 }
-
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+    font-size: 22px;
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
 
 

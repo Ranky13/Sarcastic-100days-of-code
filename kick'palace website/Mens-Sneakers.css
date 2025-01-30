@@ -78,6 +78,7 @@
     width: fit-content;
     height: fit-content;
     margin: 20px 30px 50px ;
+    position: relative;
 }
 .MN-trending-details{
     padding: 40px 10px;
@@ -86,7 +87,7 @@
 .MN-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .MN-variants img{
     height: 50px;
@@ -94,7 +95,15 @@
     border: 2px solid grey;
     cursor: pointer;
 }
-
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
 
 .MN-trending-column-details:hover{
     transform: scale(1.1)
@@ -105,4 +114,11 @@
     height: 250px;
     width: 250px;
     overflow: hidden;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+    font-size: 22px;
 }

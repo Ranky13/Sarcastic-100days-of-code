@@ -46,11 +46,14 @@ body{
     list-style: none;
 }
 .nav-links{
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     float: inline-start;
-    gap: 30px;
+    gap: 40px;
     justify-content: space-between;
+    margin-right: 10px;
+    position: relative;
 }
 .nav-links ul{
     display: flex;
@@ -111,6 +114,19 @@ body{
 .bi-heart-fill:hover{
     color: red;
 }
+.bi-cart3{
+    color: #3ad83a;
+    font-size: 30px;
+    margin-top: -5px;
+    position: relative;
+}
+.bi-cart3 span{
+    position: absolute;
+    background: red;
+    color: white;
+    font-size: 20px;
+}
+
 
 /*-----------------------------BANNER SECTION----------------------------------*/
 .banner{

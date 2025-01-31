@@ -44,7 +44,7 @@
                         <li><a href="">Contact Us</a></li>
                         <div class="search-bar"></div><input type="text" placeholder="search here"></i>
                         </li><a href="">wishlist <i class="bi bi-heart-fill"></i></a></li>
-                       <li><a href="">Cart</a></li>  
+                        <div class="bi bi-cart3"><span>0</span></div>
                     </ul> 
                 </div>    
             </div>
@@ -165,9 +165,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity1`)"></i>
+                            <span class="quantity-display" id="quantity1">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity1`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -208,9 +208,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity2`)"></i>
+                            <span class="quantity-display" id="quantity2">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity2`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -251,9 +251,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity3`)"></i>
+                                <span class="quantity-display" id="quantity3">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity3`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -294,9 +294,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity4`)"></i>
+                                <span class="quantity-display" id="quantity4">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity4`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -337,9 +337,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity5`)"></i>
+                            <span class="quantity-display" id="quantity5">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity5`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -380,9 +380,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity6`)"></i>
+                                <span class="quantity-display" id="quantity6">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity6`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -423,9 +423,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity7`)"></i>
+                            <span class="quantity-display" id="quantity7">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity7`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -467,9 +467,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity8`)"></i>
+                            <span class="quantity-display" id="quantity8">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity8`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -510,9 +510,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity9`)"></i>
+                                <span class="quantity-display" id="quantity9">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity9`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -560,9 +560,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity10`)"></i>
+                            <span class="quantity-display" id="quantity10">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity10`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -603,9 +603,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity11`)"></i>
+                                <span class="quantity-display" id="quantity11">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity11`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -634,7 +634,6 @@
                 <div class="RBK-female-details">
                     <h2>Women's Princess Shoes</h2>
                     <p>Classic Shoe</p>
-                    <p>2024</p>
                     <h3>$55</h3>
                     <div class="reviews">
                         <div class="rating">
@@ -645,9 +644,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity12`)"></i>
+                                <span class="quantity-display" id="quantity12">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity12`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -688,9 +687,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity13`)"></i>
+                                <span class="quantity-display" id="quantity13">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity13`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -731,9 +730,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity14`)"></i>
+                                <span class="quantity-display" id="quantity14">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity14`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -774,9 +773,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity15`)"></i>
+                            <span class="quantity-display" id="quantity15">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity15`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -817,9 +816,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity16`)"></i>
+                                <span class="quantity-display" id="quantity16">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity16`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -860,9 +859,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity17`)"></i>
+                                <span class="quantity-display" id="quantity17">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity17`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -903,9 +902,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity18`)"></i>
+                                <span class="quantity-display" id="quantity18">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity18`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -953,9 +952,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity19`)"></i>
+                                <span class="quantity-display" id="quantity19">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity19`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -996,9 +995,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity20`)"></i>
+                            <span class="quantity-display" id="quantity20">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity20`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1039,9 +1038,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity21`)"></i>
+                            <span class="quantity-display" id="quantity21">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity21`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1082,9 +1081,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity22`)"></i>
+                            <span class="quantity-display" id="quantity22">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity22`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1125,9 +1124,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity23`)"></i>
+                            <span class="quantity-display" id="quantity23">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity23`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1155,8 +1154,8 @@
             <div class="RBK-kids-card-details">
                 <img src="img/Unisex Reebok x Sonic Zig Dynamica 2.0 Shoes - Grade School.png" alt="">
                 <div class="RBK-kids-details">
-                    <h3>Grade School  Zig Dynamica 2.0</h3>
-                    <p>Unisex Reebok x Sonic Zig Dynamica</p>
+                    <h3>Grade School  Zig Dynamica</h3>
+                    <p>Unisex  Sonic Zig Dynamica</p>
                     <p>unisex kids sneaker</p>
                     <h3>$60</h3>
                     <div class="reviews">
@@ -1168,9 +1167,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity24`)"></i>
+                            <span class="quantity-display" id="quantity24">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity24`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1210,9 +1209,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity25`)"></i>
+                            <span class="quantity-display" id="quantity25">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity25`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1240,7 +1239,7 @@
             <div class="RBK-kids-card-details">
                 <img src="img/Classic Nylon Shoes - Preschool.png" alt="">
                 <div class="RBK-kids-details">
-                    <h2>Preschool Classic Nylon</h2>
+                    <h2>Preschool Reebok</h2>
                     <p>Classic Nylon Shoes - Preschool</p>
                     <p>kids Sneaker</p>
                     <h3>$25</h3>
@@ -1253,9 +1252,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity26`)"></i>
+                            <span class="quantity-display" id="quantity26">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity26`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -1295,9 +1294,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity27`)"></i>
+                            <span class="quantity-display" id="quantity27">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity27`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>

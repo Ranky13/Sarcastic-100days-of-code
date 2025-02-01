@@ -91,15 +91,8 @@
     height: 50px;
     border: 2px solid grey;
     cursor: pointer;
+    transform: ;
 }
-.NB-trending-card-details img{
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-}
-
 .NB-trending-card-details img{
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -107,6 +100,7 @@
     width: 250px;
     overflow: hidden;
 }
+
 .NB-trending-column-details:hover{
     transform: scale(1.1)
 }
@@ -120,10 +114,23 @@
     position: absolute;
     margin-top: 10px;
 }
-.reviews{
-    display: flex;
-    justify-content: space-between;
-}
 .quantity{
     font-size: 22px;
+    color: #3ad83a;
+}
+.bi-heart-fill{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.ThumbImg{
+    object-fit: cover;
+    border-radius: 10px;
+}
+.variantImg{
+    width: 50px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }

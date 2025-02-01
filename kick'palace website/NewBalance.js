@@ -7,4 +7,34 @@ function updateQuantity(action, quantityId){
         quantity++;
     }
     quantityDisplay.textContent = quantity;
-}
+};
+
+//? WishList Scripts----------------------------------------------------------------------------------------------------------------------------//
+
+const heartIcons = document.querySelectorAll(`.bi-heart`);
+
+heartIcons.forEach((icon) => {
+    icon.addEventListener(`click`, () => {
+        icon.classList.toggle(`bi-heart-fill`);
+        icon.classList.toggle(`bi-heart`);
+
+        if (icon.classList.contains(`bi-heart-fill`)){
+            alert(`added to wishlisst`);
+        }else{
+            alert(`removed from wishlist`);
+        }
+    });
+    });
+    
+
+
+//? variants Scripts----------------------------------------------------------------------------------------------------------------------
+
+const ThumbImage = document.querySelectorAll(`.ThumbImg`);
+const variantsImage = document.querySelectorAll(`.variantImg`);
+
+variantsImage.forEach((variant) => {
+    variant.addEventListener(`click`, () => {
+        ThumbImage.src = variant.src;
+    });
+});

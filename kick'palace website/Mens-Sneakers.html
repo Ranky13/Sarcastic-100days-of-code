@@ -43,7 +43,7 @@
                         <li><a href="">Blog</a></li> 
                         <li><a href="">Contact Us</a></li>
                         <div class="search-bar"></div><input type="text" placeholder="search here"></i>
-                        </li><a href="">wishlist <i class="bi bi-heart-fill"></i></a></li>
+                        </li><a href="">wishlist</a></li>
                         <div class="bi bi-cart3"><span>0</span></div> 
                     </ul> 
                 </div>    
@@ -156,20 +156,11 @@
                         <p>Classic Revenge Shoes</p>
                         <p>2025</p>
                         <h3>$100</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity1`)"></i>
+                            <span class="quantity-display" id="quantity1">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity1`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -200,20 +191,11 @@
                         <p>Unisex Sneaker</p>
                         <p>2025</p>
                         <h3>$90</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity2`)"></i>
+                                <span class="quantity-display" id="quantity2">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity2`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -244,20 +226,11 @@
                         <p>Trainer Sneaker</p>
                         <p>Men's Sneaker</p>
                         <h3>$120</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity3`)"></i>
+                            <span class="quantity-display" id="quantity3">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity3`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -287,20 +260,11 @@
                         <p>Men's Sneaker</p>
                         <p>purple</p>
                         <h3>$105</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity4`)"></i>
+                            <span class="quantity-display" id="quantity4">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity4`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -331,20 +295,11 @@
                         <p>Unisex Sport Shoes</p>
                         <p>2023</p>
                         <h3>$120</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity5`)"></i>
+                                <span class="quantity-display" id="quantity5">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity5`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -375,20 +330,11 @@
                         <p>Men's Sneaker</p>
                         <p>lifestyle Sneaker</p>
                         <h3>$109</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity6`)"></i>
+                                <span class="quantity-display" id="quantity6">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity6`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -419,20 +365,11 @@
                         <p>Men's Nano 2.0 Training Shoes</p>
                         <p>2023</p>
                         <h3>$120</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity7`)"></i>
+                            <span class="quantity-display" id="quantity7">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity7`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -463,20 +400,11 @@
                         <p>Men's Sneaker</p>
                         <p>2025</p>
                         <h3>$107</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity8`)"></i>
+                            <span class="quantity-display" id="quantity8">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity8`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -505,20 +433,11 @@
                         <h2>NB 740</h2>
                         <p>Unisex Sneaker</p>
                         <h3>$150</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity9`)"></i>
+                                <span class="quantity-display" id="quantity9">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity9`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -549,20 +468,11 @@
                         <p>Ferrari-Drift-Cat-</p>
                         <p>2024</p>
                         <h3>$80</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity10`)"></i>
+                            <span class="quantity-display" id="quantity10">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity10`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -592,20 +502,11 @@
                         <p>Black with Vintage Indigo</p>
                         <p>Unisex Sneaker</p>
                         <h3>$50</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity11`)"></i>
+                                <span class="quantity-display" id="quantity11">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity11`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -636,20 +537,11 @@
                         <p>LV Rider Boot</p>
                         <p>men's boot</p>
                         <h3>$90</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity2`)"></i>
+                                <span class="quantity-display" id="quantity12">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity2`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -678,20 +570,11 @@
                         <p>Black with Vintage Indigo</p>
                         <p>Unisex Sneaker</p>
                         <h3>$50</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity13`)"></i>
+                                <span class="quantity-display" id="quantity13">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity13`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -721,20 +604,11 @@
                         <p>Caven 2.0 Sneakers</p>
                         <p>2023</p>
                         <h3>$50</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity14`)"></i>
+                            <span class="quantity-display" id="quantity14">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity14`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -765,20 +639,11 @@
                         <p>Men's Sneaker</p>
                         <p>2024</p>
                         <h3>$170</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity15`)"></i>
+                                <span class="quantity-display" id="quantity15">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity15`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -809,20 +674,11 @@
                         <p>Men's Sneaker</p>
                         <p>vacation sneaker</p>
                         <h3>$90</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity16`)"></i>
+                            <span class="quantity-display" id="quantity16">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity16`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -862,9 +718,9 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="quantity">
-                            <i class="bi bi-dash"></i>
-                            <span>0</span>
-                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity17`)"></i>
+                            <span class="quantity-display" id="quantity17">0</span>
+                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity17`)"></i>
                         </div>
                     </div>
                     <button class="buy-button">Buy</button>
@@ -897,20 +753,11 @@
                         <p>Men's Boot</p>
                         <p>Ankle boots</p>
                         <h3>$105</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity18`)"></i>
+                                <span class="quantity-display" id="quantity18">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity18`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -940,20 +787,11 @@
                         <p>Men's Sneaker</p>
                         <h3>2023</h3>
                         <h3>$120</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity19`)"></i>
+                                <span class="quantity-display" id="quantity19">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity19`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -984,20 +822,11 @@
                         <p>Black with Vintage Indigo</p>
                         <p>Unisex Sneaker</p>
                         <h3>$50</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity20`)"></i>
+                                <span class="quantity-display" id="quantity20">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity20`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>
@@ -1027,20 +856,11 @@
                         <p>Men Sneakers</p>
                         <p>2024</p>
                         <h3>$100</h3>
-                        <div class="reviews">
-                            <div class="rating">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
                             <div class="quantity">
-                                <i class="bi bi-dash"></i>
-                                <span>0</span>
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity21`)"></i>
+                                <span class="quantity-display" id="quantity21">0</span>
+                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity21`)"></i>
                             </div>
-                        </div>
                         <button class="buy-button">Buy</button>
                         <button class="cart-button">Add to cart</button>
                     </div>

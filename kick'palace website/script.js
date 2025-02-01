@@ -7,4 +7,15 @@ function updateQuantity(action, quantityId){
         quantity++;
     }
     quantityDisplay.textContent = quantity;
-}
+};
+
+ //? Star Rating Scripts--------------------------------------------------------------------------------------------------------------------------//
+
+ const StarRating = document.querySelectorAll(`.bi-star`);
+
+ StarRating.forEach((star) => {
+     star.addEventListener(`click`, () => {
+         star.classList.toggle(`bi-star-fill`);
+         star.classList.toggle(`bi-star`);
+     });
+ });

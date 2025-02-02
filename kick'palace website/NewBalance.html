@@ -44,7 +44,7 @@
                         <li><a href="">Contact Us</a></li>
                         <div class="search-bar"></div><input type="text" placeholder="search here"></i>
                         </li><a href="">wishlist</a></li>
-                        <div class="bi bi-cart3"><span>0</span></div>  
+                        <div class="bi bi-cart3"><span id="cart-count">0</span></div>  
                     </ul> 
                 </div>    
             </div>
@@ -627,17 +627,17 @@
                 <div class="NB-trending-card-details">
                     <img src="img/FuelCell SuperComp Trail (1).webp" class="ThumbImg" alt="">
                     <div class="NB-trending-details">
-                        <h2>NB FuelCell</h2>
-                        <p>FuelCell SuperComp Trail</p>
-                        <p>Women's Sneaker</p>
-                        <h3>$199.9</h3>
+                        <h2 id="sneaker-name">NB FuelCell</h2>
+                        <p id="description">FuelCell SuperComp Trail</p>
+                        <p id="tag">Women's Sneaker</p>
+                        <h3 id="price">$199.9</h3>
                             <div class="quantity">
                                 <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity15`)"></i>
-                                <span class="quantity-display" id="quantity15">0</span>
+                                <span class="quantity-display" id="quantity">0</span>
                                 <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity15`)"></i>
                             </div>
                         <button class="buy-button">Buy</button>
-                        <button class="cart-button">Add to cart</button>
+                        <button class="cart-button" id="add-to-cart">Add to cart</button>
                     </div>
                 </div>
                 <div class="NB-variants">

@@ -33,7 +33,7 @@ heartIcons.forEach((icon) => {
 let Trending_Column = document.getElementById("trending-column");
 
 let generateTrendingColumn = () => {
-    return `
+    return Trending_Column.innerHTML`
     `;
 };
 generateTrendingColumn();

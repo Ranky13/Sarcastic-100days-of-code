@@ -9,6 +9,21 @@ body{
     height: 100%;
     background: #ffff;
 }
+
+@media (max-width: 768px) {
+    .announcement-bar {
+        background: yellow;
+        width: 1000px;
+        height: 10px;
+        color: white;
+
+        padding: 1px 10px 10px 70px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+}
+
 .landing{
     padding: 15px 20px 15px 20px;
 }
@@ -108,17 +123,25 @@ body{
     border-bottom: 1px solid #3ad83a;
 }
 
+.cart{
+    position: relative;
+    border-radius: 10px;
+    padding: 7px;
+}
+
 .bi-cart3{
     color: #3ad83a;
     font-size: 30px;
     margin-top: -5px;
     position: relative;
 }
-.bi-cart3 span{
+.cart-quantity{
     position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
     background: red;
     color: white;
-    font-size: 20px;
 }
 .bi-heart-fill{
     color: red;
@@ -129,26 +152,23 @@ body{
 
 /*-----------------------------BANNER SECTION----------------------------------*/
 .banner{
-    width: 100%;
     height: 300px;
     background: #f8eed2;
     border-radius: 15px;
     padding: 50px 150px ;
     box-shadow: 10px 0 10px rgba(27, 27, 27, 0.1);
 }
-.banner img{
-    width: 290px;
-    height: 290px;
-    top: 12%;
-    left: 80%;
-    position: absolute;
-    filter: drop-shadow(5px 5px 20px rgb(102, 99, 99));
-}
+
 .banner h1{
     font-size: 3rem;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     color: green;
+}
+.banner img{
+    position: absolute;
+    top: 13%;
+    left: 80%;
 }
 .banner button{
     width: 100px;
@@ -160,9 +180,11 @@ body{
     background: green;
     cursor: pointer;
     font-size: medium;
+    position:absolute;
 }
 .banner button:hover{
     color: #baf3ba;
+    transform: scale(1.2);
 }
 
 
@@ -406,14 +428,15 @@ color: black;
 
 }
 .cart-button:hover{
-    background: #ddd;
     border: none;
-    color: black;
+    transform: scale(1.2);
+    border-radius: none;
+    
 }
 .buy-button:hover{
-    background: #ddd;
     border: none;
-    color: black;
+    transform: scale(1.2);
+    border-radius: none;
 }
 .sizes{
     display: flex;
@@ -604,3 +627,77 @@ color: black;
 .bi-star-fill{
     color: orange;
 }
+
+/*Media Queries for Mobile Responsiveness
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner button {
+        width: 80px;
+        height: 40px;
+        font-size: small;
+    }
+
+    .trending-column,
+    .female-column,
+    .Kids-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .scroll-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Sneakers-brand a,
+    .price a,
+    .latest-release a,
+    .Review a,
+    .Designs a,
+    .Colors a,
+    .Year a,
+    .all-filter a {
+        width: 100%;
+    }
+}
+
+    @media (max-width: 320px) {
+        .banner h1 {
+            font-size: 0.6rem;
+        }
+    
+        .banner button {
+            width: 40px;
+            height: 20px;
+            font-size: small;
+        }
+    
+        .trending-column,
+        .female-column,
+        .Kids-column {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .scroll-bar {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .Sneakers-brand a,
+        .price a,
+        .latest-release a,
+        .Review a,
+        .Designs a,
+        .Colors a,
+        .Year a,
+        .all-filter a {
+            width: 100%;
+        }
+        .copy-right{
+            width: 100%;
+        }
+    }
+    

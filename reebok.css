@@ -46,6 +46,12 @@
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
+.RBK-wrapper:hover{
+    transform: scale(1.1);
+}
+.RBK-wrapper:hover a{
+    color: #3ad83a;
+}
 .RBK-cards{
     width: 90px;
     height: 90px;
@@ -93,8 +99,8 @@
 }
 .RBK-trending-column{
     display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -110,11 +116,15 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-trending-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.RBK-trending-details h2{
+    color: #3ad83a;
 }
 .RBK-trending-card-details img{
     object-fit: cover;
@@ -127,7 +137,7 @@
 .RBK-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .RBK-variants img{
     height: 50px;
@@ -137,7 +147,7 @@
 }
 
 .RBK-trending-column-details:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 
@@ -153,7 +163,7 @@
 .RBK-female-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -169,11 +179,15 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-female-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.RBK-female-details h2{
+    color: #3ad83a;
 }
 .RBK-female-card-details img{
     object-fit: cover;
@@ -183,7 +197,7 @@
     overflow: hidden;
 }
 .RBK-female-column-details:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 
@@ -198,7 +212,7 @@
 .RBK-kids-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 60px;
+    gap: 70px;
     width: 100%;
     height: fit-content;
     margin: 40px 20px 20px 10px;
@@ -214,11 +228,15 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 30px 20px 10px;
+    margin: 40px 30px 20px 20px;
+    position: relative;
 }
 .RBK-kids-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.RBK-kids-details h2{
+    color: #3ad83a;
 }
 .RBK-kids-card-details img{
     object-fit: cover;
@@ -229,4 +247,21 @@
 }
 .RBK-kids-column-details:hover{
     transform: scale(1.1)
+}
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+    font-size: 22px;
+    color: #3ad83a;
 }

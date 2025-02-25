@@ -10,6 +10,12 @@
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
+.NB-wrapper:hover{
+    transform: scale(1.1);
+}
+.NB-wrapper:hover a{
+    color: #3ad83a;
+}
 .NB-cards{
     width: 90px;
     height: 90px;
@@ -58,15 +64,16 @@
 .NB-trending-column{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap: 20px;
-    width: 100%;
+    gap: 70px;
+    width: fit-content;
     height: fit-content;
-    margin: 20px 0 20px 0;
+    margin: 40px 20px 20px 10px;
 }
 .NB-trending-card-details{
     display: flex;
 }
 .NB-trending-column-details{
+    position: relative;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -74,16 +81,19 @@
     padding-right: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 20px 20px 50px 10px;
+    margin: 40px 30px 20px 20px;
 }
 .NB-trending-details{
     padding: 40px 10px;
     line-height: 2.5;
 }
+.NB-trending-details h2{
+    color: #3ad83a;
+}
 .NB-variants{
     gap: 10px;
     display: flex;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .NB-variants img{
     height: 50px;
@@ -94,7 +104,41 @@
 .NB-trending-card-details img{
     object-fit: cover;
     border-top-left-radius: 15px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
+}
+
+.NB-trending-column-details:hover{
+    transform: scale(1.1);
+}
+
+.bi{
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.quantity{
+    font-size: 22px;
+    color: #3ad83a;
+}
+.bi-heart-fill{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.ThumbImg{
+    object-fit: cover;
+    border-radius: 10px;
+}
+.variantImg{
+    width: 50px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }

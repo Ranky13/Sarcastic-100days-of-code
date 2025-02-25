@@ -23,6 +23,8 @@
                     </div>
                     <h3>Kick's Palace</h3>
                 </div>
+                <div class="search-bar"><input type="text" placeholder="search here"></i>
+                </div>
                 <div class="nav-links">
                     <ul>
                         <li><a href="landing.html">Home</a></li> 
@@ -42,23 +44,23 @@
                         <li><a href="">Offer</a></li> 
                         <li><a href="">Blog</a></li> 
                         <li><a href="">Contact Us</a></li>
-                        <div class="search-bar"></div><input type="text" placeholder="search here"></i>
                         </li><a href="">wishlist</i></a></li>
-                        <div class="bi bi-cart3"><span>0</span></div> 
+                        <div class="cart">
+                            <div class="bi bi-cart3">
+                                <div class="cart-quantity">0</div>
+                            </div>
+                        </div>
                     </ul> 
                 </div>    
             </div>
         </div>
     </section>
     <section>
-            <div class="banner"> 
-                <img src="img/Banner2.png">
-                <div class="card-details">
-                    
-                </div>
-                <h1>Grap Up to 50% on <br>Selected Sneakers!</h1>
-                <a href=""><button>SIGN UP</button></a>
-            </div>
+        <div class="banner">
+            <h2>Grap Up to 50% on <br>Selected Sneakers!</h2>
+            <button>Sign Up</button>
+            <img src="img/Banner2.png">
+        </div>
             <div  class="kids-collection">
                 <h1>KIDS COLLECTIONS</h1>
                 <div class="kids-wrapper">
@@ -141,424 +143,21 @@
                     <a href="">Sort by</a>
                 </div>
             </div>
-        </section>
-    <section>
+</section>
+<section>
         <div class="trending-kids-title">
             <h1>TRENDING UNISEX KIDS SNEAKERS</h1>
         </div>
-    <div class="kids-trending-column">
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/JORDAN+MAX+AURA+6+(GS) (2).png" alt="">
-                <div class="kids-trending-details">
-                    <h2>Jordan Max Aura 6</h2>
-                    <p>Big Kids' Shoes</p>
-                    <p>kid's sneaker</p>
-                    <h3>$95</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity1`)"></i>
-                                <span class="quantity-display" id="quantity1">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity1`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/JORDAN+MAX+AURA+6+(GS) (1).png" alt="">
-                <img src="img/JORDAN+MAX+AURA+6+(GS) (2).png" alt="">
-                <img src="img/JORDAN+MAX+AURA+6+(GS) (3).png" alt="">
-                <img src="img/JORDAN+MAX+AURA+6+(GS).png" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
+        <div class="kids-trending-column" id="kids-sneaker">
         </div>
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/AIR+MAX+PLUS+(PS) (1).png" alt="">
-                <div class="kids-trending-details">
-                    <h2>Nike Air Max Plus</h2>
-                    <p>Big Kids' Shoes</p>
-                    <p>Unisex Sneaker</p>
-                    <h3>$120</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity2`)"></i>
-                                <span class="quantity-display" id="quantity2">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity2`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+MAX+PLUS+(PS) (1).png" alt="">
-                <img src="img/AIR+MAX+PLUS+(PS) (2).png" alt="">
-                <img src="img/AIR+MAX+PLUS+(PS) (3).png" alt="">
-                <img src="img/AIR+MAX+PLUS+(PS).png" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes (2).jpeg" alt="">
-                <div class="kids-trending-details">
-                    <h2>PUMA Scoot Zeros II</h2>
-                    <p>Big Kids' Basketball Shoes</p>
-                    <p>vacation sneaker</p>
-                    <h3>$90</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity3`)"></i>
-                                <span class="quantity-display" id="quantity3">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity3`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes (1).jpeg" alt="">
-                <img src="img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes (3).jpeg" alt="">
-                <img src="img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes (2).jpeg" alt="">
-                <img src="img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes.jpeg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/Easy-Rider-Mix-Big-Kids'-Sneakers.jpeg" alt="">
-                <div class="kids-trending-details">
-                    <h2>Easy Rider Mix</h2>
-                    <p>Big Kids' Sneakers</p>
-                    <p>vacation sneaker</p>
-                    <h3>$70</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity4`)"></i>
-                                <span class="quantity-display" id="quantity4">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity4`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/Easy-Rider-Mix-Big-Kids'-Sneakers (1).jpeg" alt="">
-                <img src="img/Easy-Rider-Mix-Big-Kids'-Sneakers (2).jpeg" alt="">
-                <img src="img/Easy-Rider-Mix-Big-Kids'-Sneakers (3).jpeg" alt="">
-                <img src="img/Easy-Rider-Mix-Big-Kids'-Sneakers.jpeg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/90600.webp" alt="">
-                <div class="kids-trending-details">
-                    <h2>NB 9060</h2>
-                    <p>New Balance kidsSneaker</p>
-                    <p>kids sneaker</p>
-                    <h3>$79</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity5`)"></i>
-                            <span class="quantity-display" id="quantity5">0</span>
-                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity5`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/9060 (2).webp" alt="">
-                <img src="img/9060 (3).webp" alt="">
-                <img src="img/9060.webp" alt="">
-                <div class="kids-trending-details"></div>
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-trending-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-trending-card-details">
-                <img src="img/Unisex Club C Crib Shoes - Infant.png" alt="">
-                <div class="kids-trending-details">
-                    <h2>Reebok Club C Crib</h2>
-                    <p>Unisex Club C Crib</p>
-                    <p>kids sneaker</p>
-                    <h3>$40</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity6`)"></i>
-                                <span class="quantity-display" id="quantity6">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity6`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/Unisex Club C Crib Shoes - Infant (3).png" alt="">
-                <img src="img/Unisex Club C Crib Shoes - Infant (4).png" alt="">
-                <img src="img/Unisex Club C Crib Shoes - Infant (2).png" alt="">
-                <img src="img/Unisex Club C Crib Shoes - Infant.png" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-    </div>
 </section>
 <section>
     <div class="kids-boots-title">
         <h1>TRENDING KIDS BOOTS</h1>
     </div>
-    <div class="kids-boots-column">
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity7`)"></i>
-                            <span class="quantity-display" id="quantity7">0</span>
-                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity7`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity8`)"></i>
-                                <span class="quantity-display" id="quantity8">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity8`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity9`)"></i>
-                                <span class="quantity-display" id="quantity9">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity9`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity10`)"></i>
-                            <span class="quantity-display" id="quantity10">0</span>
-                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity10`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity11`)"></i>
-                                <span class="quantity-display" id="quantity11">0</span>
-                                <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity11`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
-        <div class="kids-boots-column-details">
-            <i class="bi bi-heart"></i>
-            <div class="kids-boots-card-details">
-                <img src="img/Deviate-NITRO™-Elite-3-Women's-Running-Shoes.jpg" alt="">
-                <div class="kids-boots-details">
-                    <h2>PUMA-x-LAMELO-BALL</h2>
-                    <p>LaFrancé Assist Men'sSneaker</p>
-                    <p>2025</p>
-                    <h3>$250</h3>
-                        <div class="quantity">
-                            <i class="bi bi-dash" onclick="updateQuantity(`decrement`, `quantity12`)"></i>
-                            <span class="quantity-display" id="quantity12">0</span>
-                            <i class="bi bi-plus" onclick="updateQuantity(`increment`, `quantity12`)"></i>
-                        </div>
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-            </div>
-            <div class="kids-variants">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-                <img src="img/AIR+JORDAN+3+RETRO.jpg" alt="">
-            </div>
-            <div class="size-headline">
-                <h2>Sizes</h2>
-            </div>
-                <div class="sizes">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                </div>
-        </div>
+    <div class="kids-boots-column" id="kids-boots">
     </div>
 </section>
-     
 <footer>
     <div class="footer-section">
         <div class="footer-contents">
@@ -570,7 +169,11 @@
                 <p><i class="bi-telephone-fill"></i>+(540) 879-2198</p>
                 <hr>
                 <div class="social-links">
-                    <h3>Find us on:<i class="bi bi-facebook" style="color: blue;"></i><i class="bi bi-instagram" style="color: red;"></i><i class="bi bi-twitter" style="color: skyblue;"></i></h3>
+                    <h3>Find us on:
+                        <i class="bi bi-facebook" style="color: blue;"></i>
+                        <i class="bi bi-instagram" style="color: red;"></i>
+                        <i class="bi bi-twitter" style="color: skyblue;"></i>
+                    </h3>
                 </div>
                </div> 
                <div class="customer-support">
@@ -595,14 +198,16 @@
                </div>
         </div>
            <hr>
-           <div class="copy-right">
-            <h3>Copyright&copy;2025. All Right Reserved.</h3>
-            <h2>Developed by: Rokeeb</h2>
-           <div class="payment-icons">
-            <img src="img/paypal.png">
-            <img src="img/master card.png">
-            <img src="img/skrill.png">
-           </div>
+           <div class="last-column">
+            <div class="copy-right">
+                <h3>Copyright  &copy; 2025.     All Right Reserved.</h3>
+                <h2>Developed by: Rokeeb</h2>
+            </div>
+            <div class="paymenticons">
+                <img src="img/paypal.png">
+                <img src="img/master card.png">
+                <img src="img/skrill.png">
+            </div>
         </div>
     </div>
 </footer>

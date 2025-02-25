@@ -1,43 +1,7 @@
-function updateQuantity(action, quantityId){
-    const quantityDisplay = document.getElementById(quantityId);
-    let quantity = parseInt(quantityDisplay.textContent);
-    if(action === `decrement` && quantity > 0) {
-        quantity--;
-    }else if(action === `increment`) {
-        quantity++;
-    }
-    quantityDisplay.textContent = quantity;
-}
-
-//? WishList Scripts
-
-const heartIcons = document.querySelectorAll(`.bi-heart`);
-
-heartIcons.forEach((icon) => {
-    icon.addEventListener(`click`, () => {
-        icon.classList.toggle(`bi-heart-fill`);
-        icon.classList.toggle(`bi-heart`);
-
-        if (icon.classList.contains(`bi-heart-fill`)){
-            alert(`added to wishlisst`);
-        }else{
-            alert(`removed from wishlist`);
-        }
-    });
-    });
-
-
-                
-                    
-                    
-     
-                    
-                       
-               
-
-
-       
 //? Product data
+
+
+
 const products = [
     {
       id: 1,
@@ -349,53 +313,110 @@ const products = [
               sizes: ["S", "M", "L", "XL"]
             },
   ];
+//? Function to update quantity
+function updateQuantity(action, quantityId) {
+  const quantityDisplay = document.getElementById(quantityId);
+  let quantity = parseInt(quantityDisplay.textContent);
+  if (action === 'decrement' && quantity > 0) {
+    quantity--;
+  } else if (action === 'increment'  ) {
+    quantity++;
+  }
+  quantityDisplay.textContent = quantity;
+}
 
 
-    // Function to generate product card HTML
-   function createProductCard(product) {
-    return `
-      <div class="MN-trending-column-details">
-        <i class="bi bi-heart"></i>
-         <div class="MN-trending-card-details">
-          <img src="${product.image}" alt="${product.name}">
-           <div class="MN-trending-details">
-            <h2>${product.name}</h2>
-            <p>${product.tagName}</p>
-            <p>${product.year}</p>
-            <h3>${product.price}</h3>
-            <div class="quantity">
-              <i class="bi bi-dash" onclick="updateQuantity('decrement', 'quantity${product.id}')"></i>
-              <span class="quantity-display" id="quantity${product.id}">0</span>
-              <i class="bi bi-plus" onclick="updateQuantity('increment', 'quantity${product.id}')"></i>
-            </div>
-            <button class="buy-button">Buy</button>
-            <button class="cart-button">Add to cart</button>
+//? Function to attach event listeners to wishlist icons
+function attachWishlistListeners() {
+  const heartIcons = document.querySelectorAll('.bi-heart');
+  heartIcons.forEach((icon) => {
+    icon.addEventListener('click', handleWishlistClick);
+  });
+}
+
+
+
+//? Function to handle wishlist icon clicks
+function handleWishlistClick(event) {
+  const icon = event.target;
+  icon.classList.toggle('bi-heart-fill');
+  icon.classList.toggle('bi-heart');
+
+  if (icon.classList.contains('bi-heart-fill')) {
+    alert('Added to wishlist');
+  } else {
+    alert('Removed from wishlist');
+  }
+}
+
+
+
+
+
+
+
+
+// Function to attach event listeners to variant images
+function attachVariantListeners() {
+  const variantImages = document.querySelectorAll('.MN-variants img');
+  variantImages.forEach((image) => {
+    image.addEventListener('click', handleVariantClick);
+  });
+}
+// Function to handle variant image clicks
+function handleVariantClick(event) {
+  const variantImage = event.target.src; // Get the clicked variant's image URL
+  const productCard = event.target.closest('.MN-trending-column-details'); // Find the parent product card
+  const mainImage = productCard.querySelector('.MN-trending-card-details img'); // Find the main product image
+  mainImage.src = variantImage; // Update the main product image
+}
+
+
+
+
+
+// Function to generate product card HTML
+function createProductCard(product) {
+  return `
+    <div class="MN-trending-column-details">
+      <i class="bi bi-heart"></i>
+      <div class="MN-trending-card-details">
+        <img src="${product.image}" alt="${product.name}">
+        <div class="MN-trending-details">
+          <h2>${product.name}</h2>
+          <p>${product.tagName}</p>
+          <p>${product.year}</p>
+          <h3>${product.price}</h3>
+          <div class="quantity">
+            <i class="bi bi-dash" onclick="updateQuantity('decrement', 'quantity${product.id}')"></i>
+            <span class="quantity-display" id="quantity${product.id}">0</span>
+            <i class="bi bi-plus" onclick="updateQuantity('increment', 'quantity${product.id}')"></i>
           </div>
-        </div>
-        <div class="MN-variants">
-          ${product.variants.map(variant => `<img src="${variant}" alt="${product.name}">`).join('')}
-        </div>
-        <div class="size-headline">
-          <h2>Sizes</h2>
-        </div>
-        <div class="sizes">
-          ${product.sizes.map(size => `<span>${size}</span>`).join('')}
+          <button class="buy-button">Buy</button>
+          <button class="cart-button">Add to cart</button>
         </div>
       </div>
-    `;
-  };
-  
+      <div class="MN-variants">
+        ${product.variants.map(variant => `<img src="${variant}" alt="${product.name}">`).join('')}
+      </div>
+      <div class="size-headline">
+        <h2>Sizes</h2>
+      </div>
+      <div class="sizes">
+        ${product.sizes.map(size => `<span>${size}</span>`).join('')}
+      </div>
+    </div>
+  `;
+}
 
-      
+// Function to render all product cards
+function renderProducts() {
+  const productContainer = document.getElementById('trending-column');
 
-   // Function to render all product cards
-   function renderProducts() {
-    const productContainer = document.getElementById('trending-column');
-    productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
-  }
+  productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
+  attachWishlistListeners(); // Attach event listeners for wishlist icons
+  attachVariantListeners(); // Attach event listeners for variant images
+}
 
-
-  // Render products on page load
-  renderProducts();
-
-   
+// Render products on page load
+document.addEventListener('DOMContentLoaded', renderProducts);

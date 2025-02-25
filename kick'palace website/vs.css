@@ -23,6 +23,9 @@
 .VS-wrapper:hover{
     transform: scale(1.1);
 }
+.VS-wrapper:hover a{
+    color: #3ad83a;
+}
 .VS-cards img{
     object-fit: cover;
     width: 100%;
@@ -85,6 +88,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.VS-men-details h2{
+    color: #3ad83a;
+}
 .VS-variants{
     gap: 10px;
     display: flex;
@@ -144,6 +150,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.VS-female-details h2{
+    color: #3ad83a;
+}
 .VS-female-card-details img{
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -188,6 +197,9 @@
 .VS-kids-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.VS-kids-details{
+    color: #3ad83a;
 }
 .VS-kids-card-details img{
     object-fit: cover;

@@ -12,20 +12,46 @@ function updateQuantity(action, quantityId){
 
 
 //? Wish List Scripts
-const heartIcons = document.querySelectorAll(`.bi bi-heart`);
+const attachWishlistListeners = () => {
+  const heartIcons = document.querySelectorAll(`.bi-heart`);
+  heartIcons.forEach((icon) => {
+    icon.addEventListener(`click`, handleWishlistClick)
+  });
+}
 
-heartIcons.forEach((icon) => {
-    icon.addEventListener(`click`, () => {
-        icon.classList.toggle(`bi bi-heart-fill`);
-        icon.classList.toggle(`bi bi-heart`);
 
-        if (icon.classList.contains(`bi bi-heart-fill`)){
+const handleWishlistClick = (event) => {
+        const icon = event.target;
+        icon.classList.toggle(`.bi-heart-fill`);
+        icon.classList.toggle(`.bi-heart`);
+
+        if (icon.classList.contains(`.bi-heart-fill`)){
             alert(`added to wishlisst`);
         }else{
             alert(`removed from wishlist`);
         }
-    });
-    });
+      }
+
+
+
+
+const attachVariantListeners = () => {
+  const variantImages = document.querySelectorAll(`.VS-variants img`);
+  variantImages.forEach((image) => {
+    image.addEventListener(`click`, handleVariantClick);
+  });
+}
+
+const handleVariantClick = (event) => {
+  const variantImage = event.target.src;
+  const productCard = event.target.closest(`.VS-men-column-details, .VS-female-column-details, .VS-kids-column-details`);
+  const mainImage = productCard.querySelectorAll(`.VS-men-card-details img, .VS-female-card-details img, .VS-kids-card-details img`);
+  mainImage.forEach((image) => {
+    image.src = variantImage;
+  });
+}
+
+
 
 
 //? Product data
@@ -202,8 +228,8 @@ const WomenMenproducts = [
       },  
       {
         id: 12,
-        name: "Reebok Women's Princess",
-        tagName: "lifestyle Sneaker",
+        name: "Reebok Princess Shoe",
+        tagName: "Women lifestyle Sneaker",
         year: "2024",
         price: "$55",
         image: "img/Women's Princess Shoes (2).png",
@@ -294,8 +320,8 @@ const Kidsproducts = [
       },
       {
         id: 18,
-        name: "",
-        tagName: "Bid Kids Sneaker",
+        name: "Puma",
+        tagName: "Big Kids Sneaker",
         year: "2023",
         price: "$90",
         image: "img/Scoot-Zeros-II-2K-Big-Kids'-Basketball-Shoes (2).jpeg",
@@ -346,19 +372,7 @@ const Kidsproducts = [
       </div>
     `;
   };
-  
 
-      
-
-   // Function to render all product cards
-   function renderProducts() {
-    const productContainer = document.getElementById('VS-men-column');
-    productContainer.innerHTML = Menproducts.map(product => createProductCard(product)).join('');
-  }
-
-
-  // Render products on page load
-  renderProducts();
 
 
 
@@ -395,22 +409,8 @@ const Kidsproducts = [
       </div>
     `;
   };
-  
-
-      
-
-   // Function to render all product cards
-   function renderFemaleProducts() {
-    const FemaleproductContainer = document.getElementById('VS-female-column');
-    FemaleproductContainer.innerHTML = WomenMenproducts.map(product => createFemaleProductCard(product)).join('');
-  }
 
 
-
-
-
-  // Render products on page load
-  renderKidsProducts();
 
 
   // Function to generate  Female  product card HTML
@@ -451,9 +451,18 @@ const Kidsproducts = [
       
 
    // Function to render all product cards
-   function renderKidsProducts() {
+   const RenderAllProducts = () => {
+    const productContainer = document.getElementById('VS-men-column');
+    productContainer.innerHTML = Menproducts.map(product => createProductCard(product)).join('');
+
+    const FemaleproductContainer = document.getElementById('VS-female-column');
+    FemaleproductContainer.innerHTML = WomenMenproducts.map(product => createFemaleProductCard(product)).join('');
+
     const KidsproductContainer = document.getElementById('VS-kids-column');
     KidsproductContainer.innerHTML = Kidsproducts.map(product => createKidsProductCard(product)).join('');
+    
+    attachWishlistListeners();
+    attachVariantListeners();
   }
 
 
@@ -461,4 +470,4 @@ const Kidsproducts = [
 
 
   // Render products on page load
-  renderFemaleProducts();
+  RenderAllProducts();

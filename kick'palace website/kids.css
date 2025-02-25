@@ -10,6 +10,12 @@
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
+.kids-wrapper:hover{
+    transform: scale(1.1);
+}
+.kids-wrapper:hover a{
+    color: #3ad83a;
+}
 .kids-cards{
     width: 90px;
     height: 90px;
@@ -81,6 +87,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.kids-trending-details h2{
+    color: #3ad83a;
+}
 .kids-variants{
     gap: 10px;
     display: flex;
@@ -140,6 +149,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.kids-sandal-details h2{
+    color: #3ad83a;
+}
 .kids-sandal-card-details img{
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -183,6 +195,9 @@
 .kids-boots-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.kids-boots-details h2{
+    color: #3ad83a;
 }
 .kids-boots-card-details img{
     object-fit: cover;

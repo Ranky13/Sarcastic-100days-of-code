@@ -19,6 +19,12 @@
     gap: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.LV-wrapper:hover{
+    transform: scale(1.1);
+}
+.LV-wrapper:hover a{
+    color: #3ad83a;
+}
 .LV-cards img{
     object-fit: cover;
     width: 100%;
@@ -81,6 +87,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.LV-trending-details h2{
+    color: #3ad83a;
+}
 .LV-variants{
     gap: 10px;
     display: flex;
@@ -139,6 +148,9 @@
 .LV-female-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.LV-female-details h2{
+    color: #3ad83a;
 }
 .LV-female-card-details img{
     object-fit: cover;

@@ -9,20 +9,95 @@ function updateQuantity(action, quantityId){
     quantityDisplay.textContent = quantity;
 };
 
-const heartIcons = document.querySelectorAll(`.bi-heart`);
 
-heartIcons.forEach((icon) => {
-    icon.addEventListener(`click`, () => {
-        icon.classList.toggle(`bi-heart-fill`);
-        icon.classList.toggle(`bi-heart`);
+//? Wishlist Script--------------------------------------------------------------------------
 
-        if (icon.classList.contains(`bi-heart-fill`)){
-            alert(`added to wishlisst`);
-        }else{
-            alert(`removed from wishlist`);
+const attachWishlistListeners = () => {
+  const heartIcons = document.querySelectorAll(`.bi-heart`);
+  heartIcons.forEach((icons) => {
+    icons.addEventListener(`click`, handleWishlistClick);
+  });
+}
+
+const handleWishlistClick = (event) => {
+  const icon = event.target;
+  icon.classList.toggle(`bi-heart-fill`);
+  icon.classList.toggle(`bi-heart`);
+
+  if(icon.classList.contains(`bi-heart-fill`)) {
+    alert(`Added to Wishlist`)
+  }else{
+    alert(`Removed From Wishlist`);
+  }
+
+}
+
+//? product Variants Click Event Script-----------------------------------------------------
+const attachVariantListeners = () => {
+  const variantImages = document.querySelectorAll(`.RBK-variants img`);
+  variantImages.forEach((image) => {
+    image.addEventListener(`click`, handleVariantClick);
+  });
+}
+
+const handleVariantClick = (event) => {
+  const variantImage = event.target.src;
+  const productCard = event.target.closest(`.RBK-trending-column-details, .RBK-female-column-details, .RBK-kids-column-details`);
+  const mainImage = productCard.querySelectorAll(`.RBK-trending-card-details img, .RBK-female-card-details img, .RBK-kids-card-details img`);
+  mainImage.forEach((image) => {
+    image.src = variantImage;
+  });
+}
+
+// Search functionality
+const searchInput = document.getElementById('searchInput');
+
+// Function to filter products based on search input
+function filterProducts(searchTerm) {
+    const allProducts = [...Menproducts, ...WomenMenproducts, ...KidsProducts];
+    return allProducts.filter(product =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.tagName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+}
+
+// Function to display filtered products
+function displayFilteredProducts(filteredProducts) {
+    const productContainer = document.getElementById('reebok-trending');
+    const womenProductContainer = document.getElementById('Reebok-female');
+    const kidsProductContainer = document.getElementById('reebok-kids-column');
+
+    // Clear existing content
+    productContainer.innerHTML = '';
+    womenProductContainer.innerHTML = '';
+    kidsProductContainer.innerHTML = '';
+
+    // Display filtered products
+    filteredProducts.forEach(product => {
+        if (product.id <= 9) {
+            productContainer.innerHTML += createProductCard(product);
+        } else if (product.id <= 18) {
+            womenProductContainer.innerHTML += createWomenProductCard(product);
+        } else {
+            kidsProductContainer.innerHTML += createKidsProductCard(product);
         }
     });
-    });
+
+    
+}
+
+// Event listener for search input
+searchInput.addEventListener('input', (event) => {
+    const searchTerm = event.target.value.trim();
+    if (searchTerm) {
+        const filteredProducts = filterProducts(searchTerm);
+        displayFilteredProducts(filteredProducts);
+    } else {
+        // If search input is empty, render all products
+        RenderAllProducts();
+    }
+});
+
 
 
     //? Product data
@@ -166,10 +241,6 @@ const Menproducts = [
   ];
 
   //? Female Product data
-
-                
-
-
 const WomenMenproducts = [
     {
       id: 10,
@@ -483,26 +554,6 @@ const WomenMenproducts = [
   };
   
 
-      
-
-   //? Function to render all product cards
-   function renderProducts() {
-    const productContainer = document.getElementById('reebok-trending');
-    productContainer.innerHTML = Menproducts.map(product => createProductCard(product)).join('');
-  }
-
-  //? Render products on page load
-  renderProducts();
-
-
-
-
-
-
-
-
-
-
    //?  Function to generate Women product card HTML
          
    function createWomenProductCard(product) {
@@ -538,18 +589,6 @@ const WomenMenproducts = [
     `;
   };
   
-
-      
-
-   // Function to render all product cards
-   function renderWomenProducts() {
-    const WomenProductContainer = document.getElementById('Reebok-female');
-    WomenProductContainer.innerHTML = WomenMenproducts.map(product => createWomenProductCard(product)).join('');
-  }
-
-
-  // Render products on page load
-  renderWomenProducts();
 
 
 
@@ -592,10 +631,18 @@ const WomenMenproducts = [
       
 
    //? Function to render all product cards
-   function renderKidsProducts() {
+
+   const RenderAllProducts = () => {
+    const productContainer = document.getElementById('reebok-trending');
+    productContainer.innerHTML = Menproducts.map(product => createProductCard(product)).join('');
+
+    const WomenProductContainer = document.getElementById('Reebok-female');
+    WomenProductContainer.innerHTML = WomenMenproducts.map(product => createWomenProductCard(product)).join('');
+
     const KidsProductContainer = document.getElementById('reebok-kids-column');
     KidsProductContainer.innerHTML = KidsProducts.map(product => createKidsProductCard(product)).join('');
+    attachWishlistListeners();
+    attachVariantListeners();
   }
 
-  //? Render products on page load
-  renderKidsProducts();
+   RenderAllProducts();

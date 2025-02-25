@@ -47,6 +47,12 @@
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
+.NL-wrapper:hover a{
+    color: #3ad83a;
+}
+.NL-wrapper:hover{
+    transform: scale(1.1);
+}
 .NL-cards{
     width: 90px;
     height: 90px;
@@ -117,6 +123,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.nike-trending-details h2{
+    color: #3ad83a;
+}
 .nike-variants{
     gap: 10px;
     display: flex;
@@ -175,6 +184,9 @@
     padding: 40px 10px;
     line-height: 2.5;
 }
+.nike-female-details h2{
+    color: #3ad83a;
+}
 .nike-female-column-details:hover{
     transform: scale(1.1)
 }
@@ -220,6 +232,9 @@
 .nike-kids-details{
     padding: 40px 10px;
     line-height: 2.5;
+}
+.nike-kids-details h2{
+    color: #3ad83a;
 }
 .nike-kids-column-details:hover{
     transform: scale(1.1)

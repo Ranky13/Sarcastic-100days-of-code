@@ -42,13 +42,7 @@ body{
     width: 40px;
     height: 40px;
 }
-@media and screen  (max-width: 800px){
-    html,body{
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+@media (max-width: 800px){
     .announcement-bar{
         background: green;
         width: 100%;
@@ -63,14 +57,10 @@ body{
     }
     .nav-bar{
         display: flex;
+        flex-direction: row;
         font-size: 10px;
         white-space: nowrap;
         font-size: smaller;
-        gap: 0;
-    }
-    .nav-links ul li{
-        display: block;
-        flex-direction: row;
         gap: 0;
     }
     .logo{
@@ -87,10 +77,36 @@ body{
     .logo h3{
         font-size: 10px;
     }
-    .nav-links ul{
+    .nav-links{
+        gap: 20px;
+        line-height: 4;
+        color: white;
+        background: green;
         display: flex;
-        flex-direction: row;
-        gap: 0px;
+        max-width: 300px;
+        min-height: fit-content;
+        position: relative;
+       
+    }
+    .nav-links ul{
+        display: block;
+        gap: 30px;
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+        position: relative;
+    }
+    .nav-links li{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        line-height: 5;
+        position: absolute;
+    }
+    .nav-links ul li a{
+        gap: 10px;
+        color: white;
+        position: relative;
     }
     .search-bar input{
         width: 80px;
@@ -101,7 +117,6 @@ body{
         padding: 5px 15px ;
         border: none;
         outline: none;
-        display: none;
     }
     .sub-categories{
         display: none;
@@ -163,15 +178,18 @@ body{
     }
     
     .banner h2{
-        font-size: 3rem;
+        position: absolute;
+        font-size: 10px;
         font-family: 'Arial Narrow Bold', sans-serif;
         font-weight: bolder;
-        color: green;
+        color: rgb(43, 170, 43);
     }
     .banner img{
         position: absolute;
-        top: 13%;
+        top: 1%;
         left: 80%;
+        width: 190px;
+        height: 190px;
     }
     .banner button{
         width: 100px;
@@ -183,7 +201,46 @@ body{
         background: green;
         cursor: pointer;
         font-size: medium;
-        position:absolute;
+        position:relative;
+    }
+    .footer-contents{ 
+        display: flex; 
+        justify-content: space-between;
+        padding: 10px 10px 10px;
+        line-height: 2;
+        color: white;
+        font-size: small;
+    }
+    .footer-contents h1{
+        font-size: 15px;
+        color: green;
+    }
+    .brand hr{
+        display: none;
+    }
+    .brand {
+        width: 250px;
+    }
+    .last-column{
+        display: flex;
+        padding: 10px 10px 10px;
+        gap: 500PX;
+        color: rgb(255, 255, 255);
+        border-top: 3px solid green;
+        outline: none;
+        position: relative;
+        line-height: 2;
+    }
+    .copy-right{
+        font-size: small;
+    }
+    .paymenticons{
+        display: flex;
+        width: 50px;
+        height: 30px;
+        right: 20%;
+        gap: 10px;
+        position: absolute;
     }
 }
 
@@ -340,6 +397,12 @@ body{
     display: inline-block;
     margin: 60px 10px 30px 0;
 }
+.LT-wrapper:hover{
+    transform: scale(1.1);
+}
+.LT-wrapper:hover a{
+    color: #3ad83a;
+}
 .LT-cards{
     width: 90px;
     height: 90px;
@@ -465,8 +528,8 @@ body{
     border-radius: 20px;
 }
 .Year a:hover{
-background: rgba(128, 128, 128, 0.185);
-color: black;
+    background: rgba(128, 128, 128, 0.185);
+    color: black;
 }
 .all-filter a{
     width: 200px;
@@ -511,7 +574,7 @@ color: black;
     display: grid;
     grid-template-columns: repeat(6,2fr);
     gap: 50px;
-    width: 100%;
+    max-width: 100%;
     height: fit-content;
     margin: 20px 0 10px 0;
 }
@@ -520,8 +583,9 @@ color: black;
     border-radius: 20px;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
-.trending-column .trending-cards-details:hover{
+.trending-cards-details:hover{
     transform: scale(1.1);
 }
 .trending-cards-details{
@@ -536,6 +600,23 @@ color: black;
 .trending-details{
     padding: 5px 10px 10px;
     line-height: 1.5;
+}
+.trending-details h2{
+    color: #3ad83a;
+}
+
+
+.bi-heart{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+.bi-heart-fill{
+    color: red;
+    left: 90%;
+    position: absolute;
+    margin-top: 10px;
 }
 .buy-button{
     width: 100px;
@@ -607,14 +688,15 @@ color: black;
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #ddd;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
 }
 
 .female-column{
     display: grid;
     grid-template-columns: repeat(6,2fr);
     gap: 50px;
-    width: 100%;
+    max-width: 100%;
     height: fit-content;
     margin: 20px 0 20px 0;
 }
@@ -630,7 +712,10 @@ color: black;
     padding: 5px 10px 10px;
     line-height: 1.5;
 }
-.female-column .female-cards-details:hover{
+.female-details h2{
+    color: #3ad83a;
+}
+.female-cards-details:hover{
     transform: scale(1.1);
 }
 
@@ -649,6 +734,7 @@ color: black;
     border: 5px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
     font-size: medium;
+    position: relative;
 }
 
 .Kids-column{
@@ -669,7 +755,10 @@ color: black;
     padding: 5px 10px 10px;
     line-height: 1.5;
 }
-.Kids-column .Kids-cards-details:hover{
+.kids-details h2{
+    color: #3ad83a;
+}
+.Kids-cards-details:hover{
     transform: scale(1.1);
 }
 
@@ -678,10 +767,10 @@ color: black;
 .footer-section{
     background: rgb(37, 182, 37);
 }
-.footer-contents{
-    display: flex;
+  .footer-contents{   
+    display: flex; 
     justify-content: space-between;
-    padding: 50px 100px 50px;
+    padding: 50px 50px 50px;
     line-height: 3;
     color: white;
 }
@@ -692,7 +781,7 @@ color: black;
     color:#3ad83a;
 }
 .brand hr{
-    outline: 2px solid green;
+    outline: solid green;
 }
 .footer-section a{
     color: white;
@@ -715,34 +804,31 @@ color: black;
     height: 40px;
 }
 
-.copy-right{
+.last-column{
     display: flex;
-    padding: 30px 100px 30px;
+    padding: 30px 50px 30px;
     gap: 500PX;
     color: rgb(255, 255, 255);
-    outline: 5px solid green;
+    border-top: 3px solid green;
+    outline: none;
+    line-height: 2;
 }
-.payment-icons{
-    display: none;
+.copy-right{
+    white-space: nowrap;
+}
+.paymenticons{
+    display: flex;
     width: 70px;
     height: 30px;
     position: absolute;
-    right: 10%;
+    right: 20%;
     gap: 10px;
 }
 
-.contact-container{
-    width: 80%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;   
-}
 .landing-reviews{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .quantity{
@@ -754,7 +840,13 @@ color: black;
 }
 .bi-star{
     color: orange;
+    position: relative;
 }
 .bi-star-fill{
     color: orange;
+    position: relative;
 }
+.bi-star-half{
+    color: orange;
+}
+

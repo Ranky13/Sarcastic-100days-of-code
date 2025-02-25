@@ -1,42 +1,4 @@
-
-    function updateQuantity(action, quantityId){
-        const quantityDisplay = document.getElementById(quantityId);
-        let quantity = parseInt(quantityDisplay.textContent);
-        if(action === `decrement` && quantity > 0) {
-            quantity--;
-        }else if(action === `increment`) {
-            quantity++;
-        }
-        quantityDisplay.textContent = quantity;
-    };
-    
-    //? WishList Scripts----------------------------------------------------------------------------------------------------------
-    
-    const heartIcons = document.querySelectorAll(`.bi-heart`);
-    
-    heartIcons.forEach((icon) => {
-        icon.addEventListener(`click`, () => {
-            icon.classList.toggle(`bi-heart-fill`);
-            icon.classList.toggle(`bi-heart`);
-    
-            if (icon.classList.contains(`bi-heart-fill`)){
-                alert(`added to wishlisst`);
-            }else{
-                alert(`removed from wishlist`);
-            }
-        });
-        });      
-//? variants Scripts----------------------------------------------------------------------------------------------------------------------
-
-const ThumbImage = document.querySelectorAll(`.ThumbImg`);
-const variantsImage = document.querySelectorAll(`.variantImg`); 
-
-variantsImage.forEach((variant) => {
-    variant.addEventListener(`click`, () => {
-        ThumbImage.src = variant.src;
-    });
-});
-
+       
 //? Product data
 const products = [
     {
@@ -268,6 +230,70 @@ const products = [
   ];
 
 
+
+
+
+  function updateQuantity(action, quantityId) {
+    const quantityDisplay = document.getElementById(quantityId);
+    let quantity = parseInt(quantityDisplay.textContent);
+    if(action === `decrement` && quantity > 0){
+      quantity--;
+    }else if (action === `increment`){
+      quantity++;
+    }
+    quantityDisplay.textContent = quantity;
+  }
+  
+//? WishList Scripts----------------------------------------------------------------------------------------------------------
+
+// Function to attach event listeners to wishlist icons
+const attachWishlistListeners = () => {
+  const heartIcons = document.querySelectorAll('.bi-heart');
+  heartIcons.forEach((icon) => {
+    icon.addEventListener('click', handleWishlistClick);
+  });
+}
+
+
+// Function to handle wishlist icon clicks
+const handleWishlistClick = (event) => {
+  const icon = event.target;
+  icon.classList.toggle('bi-heart-fill');
+  icon.classList.toggle('bi-heart');
+
+  if (icon.classList.contains('bi-heart-fill')) {
+    alert('Added to wishlist');
+  } else {
+    alert('Removed from wishlist');
+  }
+}
+
+
+
+// Function to attach event listeners to variant images
+function attachVariantListeners() {
+  const variantImages = document.querySelectorAll('.NB-variants img');
+  variantImages.forEach((image) => {
+    image.addEventListener('click', handleVariantClick);
+  });
+}
+
+
+
+// Function to handle variant image clicks
+function handleVariantClick(event) {
+  const variantImage = event.target.src; // Get the clicked variant's image URL
+  const productCard = event.target.closest('.NB-trending-column-details'); // Find the parent product card
+  const mainImage = productCard.querySelector('.NB-trending-card-details img'); // Find the main product image
+  mainImage.src = variantImage; // Update the main product image
+}
+
+
+
+
+
+
+
     // Function to generate product card HTML
    function createProductCard(product) {
     return `
@@ -306,12 +332,21 @@ const products = [
       
 
    // Function to render all product cards
-   function renderProducts() {
+   const renderProducts = () => {
     const productContainer = document.getElementById('NB-trending-column');
     productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
+    attachWishlistListeners();
+    attachVariantListeners();
   }
 
 
   // Render products on page load
   renderProducts();
+
+
+
+
+
+
+
 

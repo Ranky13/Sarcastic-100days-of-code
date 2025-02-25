@@ -1,33 +1,4 @@
-//?Quantity scripts
-function updateQuantity(action, quantityId){
-    const quantityDisplay = document.getElementById(quantityId);
-    let quantity = parseInt(quantityDisplay.textContent);
-    if(action === `decrement` && quantity > 0) {
-        quantity--;
-    }else if(action === `increment`) {
-        quantity++;
-    }
-    quantityDisplay.textContent = quantity;
-};
-//*------------------------wishlist comment----------------------------------------------
-
-
-const heartIcons = document.querySelectorAll(`.bi-heart`);
-
-heartIcons.forEach((icon) => {
-    icon.addEventListener(`click`, () => {
-        icon.classList.toggle(`bi-heart-fill`);
-        icon.classList.toggle(`bi-heart`);
-
-        if (icon.classList.contains(`bi-heart-fill`)){
-            alert(`added to wishlisst`);
-        }else{
-            alert(`removed from wishlist`);
-        }
-    });
-    });
-
- // Product data
+//? Product data
  const products = [
     {
       id: 1,
@@ -224,21 +195,6 @@ heartIcons.forEach((icon) => {
         ],
         sizes: ["S", "M", "L", "XL"]
       },
-      {
-        id: 14,
-        name: "GV Special Base",
-        description: "Unisex Sneakers",
-        year: "2024",
-        price: "$90",
-        image: "img/GV-Special-Base-Sneakers-Unisex.jpeg",
-        variants: [
-           "img/GV-Special-Base-Sneakers-Unisex (1).jpeg",
-           "img/GV-Special-Base-Sneakers-Unisex (2).jpeg", 
-           "img/GV-Special-Base-Sneakers-Unisex (3).jpeg", 
-           "img/GV-Special-Base-Sneakers-Unisex.jpeg"
-        ],
-        sizes: ["S", "M", "L", "XL"]
-      },
     {
         id: 15,
         name: "FUTURE 8 ULTIMATE",
@@ -275,17 +231,68 @@ heartIcons.forEach((icon) => {
         description: "AG Football Women BootShoes",
         year: "2022",
         price: "$80",
-        image: "img/Voltaic-Evo-Fast-Men's-Training-Shoes.jpeg",
+        image: "img/Voltaic-Evo-Fast-Men's-Training-Shoes (3).jpeg",
         variants: [
-          "img/FUTURE-8-ULTIMATE-FG-Football-Boots (1).jpeg",
-          "img/FUTURE-8-ULTIMATE-FG-Football-Boots (2).jpeg",
-          "img/FUTURE-8-ULTIMATE-FG-Football-Boots (3).jpeg",
-          "img/FUTURE-8-ULTIMATE-FG-Football-Boots.jpeg"
+          "img/Voltaic-Evo-Fast-Men's-Training-Shoes.jpeg",
+          "img/Voltaic-Evo-Fast-Men's-Training-Shoes (1).jpeg",
+          "img/Voltaic-Evo-Fast-Men's-Training-Shoes (3).jpeg",
+          "img/Voltaic-Evo-Fast-Men's-Training-Shoes (4).jpeg",
+          "img/Voltaic-Evo-Fast-Men's-Training-Shoes (2).jpeg"
         ],
         sizes: ["S", "M", "L", "XL"]
       },
-
   ];
+
+//?Quantity scripts
+function updateQuantity(action, quantityId){
+  const quantityDisplay = document.getElementById(quantityId);
+  let quantity = parseInt(quantityDisplay.textContent);
+  if(action === `decrement` && quantity > 0) {
+      quantity--;
+  }else if(action === `increment`) {
+      quantity++;
+  }
+  quantityDisplay.textContent = quantity;
+};
+
+//? Wish List Script------------------------------------------------------------------------
+const attachWishlistListeners = () => {
+const heartIcons = document.querySelectorAll(`.bi-heart`);
+heartIcons.forEach((icons) => {
+  icons.addEventListener(`click`, handleWishlistClick);
+});
+}
+
+
+
+const handleWishlistClick = (event) => {
+const icon = event.target;
+icon.classList.toggle(`bi-heart-fill`);
+icon.classList.toggle(`bi-heart`);
+
+if (icon.classList.contains(`bi-heart-fill`)) {
+  alert(`Added to Wishlist`);
+}else {
+  alert(`Removed From Wishlist`);
+}
+}
+
+
+//? Variants Scripts---------------------------------------------------------------------
+const attachVariantListeners = () => {
+  const variantImages = document.querySelectorAll(`.Puma-variants`);
+  variantImages.forEach((image) => {
+    image.addEventListener(`click`, handleVariantClick);
+  });
+}
+const handleVariantClick = (event) => {
+  const variantImage = event.target.src;
+  const productCard = event.target.closest(`.Puma-trending-column-details`);
+  const mainImage = productCard.querySelector(`.Puma-trending-card-details img`);
+    mainImage.src = variantImage;
+}
+
+  
    // Function to generate product card HTML
    function createProductCard(product) {
     return `
@@ -319,11 +326,19 @@ heartIcons.forEach((icon) => {
       </div>
     `;
   };
+
+      
+
    // Function to render all product cards
    function renderProducts() {
     const productContainer = document.getElementById('puma');
     productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
+    attachWishlistListeners();
+    attachVariantListeners();
   }
+
+
+
 
 
   // Render products on page load

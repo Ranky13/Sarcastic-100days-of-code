@@ -1,3 +1,8 @@
+//? Import cart functions from cart.js
+import { addToCart, updateCartUI, attachCartButtons } from './cart.js';
+
+
+
 //? Product data
  const products = [
     {
@@ -5,7 +10,7 @@
       name: "Speedcat-OG",
       description: "Unisex Sneakers",
       year: "2024",
-      price: "$90",
+      price: "90",
       image: "img/Speedcat-OG-Sneakers-Unisex (2).jpeg",
       variants: [
         "img/Speedcat-OG-Sneakers-Unisex (1).jpeg",
@@ -20,7 +25,7 @@
       name: "Easy Rider Vintage",
       description: "Unisex Sneakers",
       year: "2025",
-      price: "$80",
+      price: "80",
       image: "img/Easy-Rider-Vintage-Sneakers (1).jpeg",
       variants: [
         "img/Easy-Rider-Vintage-Sneakers (3).jpeg",
@@ -35,7 +40,7 @@
         name: "Palermo",
         description: "Unisex Palermo Vintage",
         year: "2024",
-        price: "$80",
+        price: "80",
         image: "img/Palermo-Vintage-Sneakers-Unisex (1).jpeg",
         variants: [
           "img/Palermo-Vintage-Sneakers-Unisex (3).jpeg",
@@ -50,7 +55,7 @@
         name: "RS-X Efekt PRM",
         description: "Men Sneakers",
         year: "2024",
-        price: "$100",
+        price: "100",
         image: "img/RS-X-Efekt-PRM-Sneakers.jpeg",
         variants: [
           "img/RS-X-Efekt-PRM-Sneakers (1).jpeg",
@@ -65,7 +70,7 @@
         name: "PUMA Caven",
         description: "Caven 2.0 Sneakers",
         year: "2023",
-        price: "$50",
+        price: "50",
         image: "img/caven 2.PNG" ,
         variants: [
         "img/caven 4.PNG",
@@ -80,7 +85,7 @@
         name: "Scuderia",
         description: "Ferrari-Drift-Cat",
         year: "2023",
-        price: "$80",
+        price: "80",
         image: "img/scuderia ferrarri.PNG",
         variants: [
           "img/scuderia 3.PNG",
@@ -94,7 +99,7 @@
         name: "Suede",
         description: "Unisex Sneakers",
         year: "2025",
-        price: "$90",
+        price: "90",
         image: "img/Suede-XL-Sneakers-Unisex.jpeg" ,
         variants: [
           "img/Suede-XL-Sneakers-Unisex (1).jpeg",
@@ -109,7 +114,7 @@
         name: "Velophasis",
         description: "Unisex Sneakers",
         year: "2023",
-        price: "$80",
+        price: "80",
         image:  "img/Velophasis-Sneakers.jpeg",
         variants: [
           "img/Velophasis-Sneakers (1).jpeg",
@@ -124,7 +129,7 @@
         name: "GV Special Base",
         description: "Unisex Sneakers",
         year: "2024",
-        price: "$90",
+        price: "90",
         image: "img/GV-Special-Base-Sneakers-Unisex.jpeg",
         variants: [
            "img/GV-Special-Base-Sneakers-Unisex (1).jpeg",
@@ -139,7 +144,7 @@
         name: "Arizona Nylon",
         description: "Unisex Sneakers",
         year: "2023",
-        price: "$85",
+        price: "85",
         image:  "img/Arizona-Nylon-Sneakers.jpeg" ,
         variants: [
           "img/Arizona-Nylon-Sneakers (1).jpeg",
@@ -154,7 +159,7 @@
         name: "ScudNitro Goreeria",
         description: "Women Hiking Shoe",
         year: "2023",
-        price: "$110",
+        price: "110",
         image: "img/Explore-NITRO-Mid-GORE-TEX-Hiking-Shoes-Women.jpeg",
         variants: [
           "img/Explore-NITRO-Mid-GORE-TEX-Hiking-Shoes-Women (1).jpeg",
@@ -169,7 +174,7 @@
         name: "Voyage NITRO™",
         description: "Women Running Shoe",
         year: "2022",
-        price: "$130",
+        price: "130",
         image: "img/Voyage-NITRO™-3-Disc-Trail-Running-Shoes-Women.jpeg" ,
         variants: [
           "img/Voyage-NITRO™-3-Disc-Trail-Running-Shoes-Women (1).jpeg",
@@ -185,7 +190,7 @@
         name: "Fast-Trac NITRO",
         description: "Women Running shoe",
         year: "2023",
-        price: "$80",
+        price: "80",
         image:  "img/Fast-Trac-NITRO™-3-Trail-Running-Shoes-Women.jpeg",
         variants: [
             "img/Fast-Trac-NITRO™-3-Trail-Running-Shoes-Women (1).jpeg",
@@ -200,7 +205,7 @@
         name: "FUTURE 8 ULTIMATE",
         description: "AG Football Women Boot",
         year: "2022",
-        price: "$100",
+        price: "100",
         image:  "img/FUTURE-8-ULTIMATE-FG-Football-Boots.jpeg",
         variants: [
           "img/FUTURE-8-ULTIMATE-FG-Football-Boots (1).jpeg",
@@ -215,7 +220,7 @@
         name: "PUMA x SQUID GAME",
         description: "Men Sneaker",
         year: "2022",
-        price: "$100",
+        price: "100",
         image: "img/PUMA-x-SQUID-GAME-Easy-Rider-Men's-Sneakers (1).jpeg",
         variants: [
           "img/PUMA-x-SQUID-GAME-Easy-Rider-Men's-Sneakers.jpeg",
@@ -230,7 +235,7 @@
         name: "Voltaic Evo Fast",
         description: "AG Football Women BootShoes",
         year: "2022",
-        price: "$80",
+        price: "80",
         image: "img/Voltaic-Evo-Fast-Men's-Training-Shoes (3).jpeg",
         variants: [
           "img/Voltaic-Evo-Fast-Men's-Training-Shoes.jpeg",
@@ -243,19 +248,26 @@
       },
   ];
 
-//?Quantity scripts
-function updateQuantity(action, quantityId){
-  const quantityDisplay = document.getElementById(quantityId);
-  let quantity = parseInt(quantityDisplay.textContent);
-  if(action === `decrement` && quantity > 0) {
-      quantity--;
-  }else if(action === `increment`) {
-      quantity++;
-  }
-  quantityDisplay.textContent = quantity;
+//?----------------------------------------------------------------Quantity scriptsfunction updateQuantity(action, quantityId, productId) {
+  function updateQuantity(action, quantityId){
+    const quantityDisplay = document.getElementById(quantityId);
+    let quantity = parseInt(quantityDisplay.textContent);
+    if(action === `decrement` && quantity > 0) {
+        quantity--;
+    }else if(action === `increment`) {
+        quantity++;
+    }
+    quantityDisplay.textContent = quantity;
 };
-
-//? Wish List Script------------------------------------------------------------------------
+  
+    // Update the cart in localStorage
+    const product = cart.find(item => item.id === productId);
+    if (product) {
+        product.quantity = quantity;
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+  
+//?-----------------------------------------------------------------Wish List Script
 const attachWishlistListeners = () => {
 const heartIcons = document.querySelectorAll(`.bi-heart`);
 heartIcons.forEach((icons) => {
@@ -278,7 +290,7 @@ if (icon.classList.contains(`bi-heart-fill`)) {
 }
 
 
-//? Variants Scripts---------------------------------------------------------------------
+//?----------------------------------------------------------------------- Variants Scripts
 const attachVariantListeners = () => {
   const variantImages = document.querySelectorAll(`.Puma-variants`);
   variantImages.forEach((image) => {
@@ -292,54 +304,102 @@ const handleVariantClick = (event) => {
     mainImage.src = variantImage;
 }
 
-  
-   // Function to generate product card HTML
-   function createProductCard(product) {
-    return `
-      <div class="Puma-trending-column-details">
-        <i class="bi bi-heart"></i>
-        <div class="Puma-trending-card-details">
-          <img src="${product.image}" alt="${product.name}">
-          <div class="Puma-trending-details">
-            <h2>${product.name}</h2>
-            <p>${product.description}</p>
-            <p>${product.year}</p>
-            <h3>${product.price}</h3>
-            <div class="quantity">
-              <i class="bi bi-dash" onclick="updateQuantity('decrement', 'quantity${product.id}')"></i>
-              <span class="quantity-display" id="quantity${product.id}">0</span>
-              <i class="bi bi-plus" onclick="updateQuantity('increment', 'quantity${product.id}')"></i>
-            </div>
-            <button class="buy-button">Buy</button>
-            <button class="cart-button">Add to cart</button>
-          </div>
-        </div>
-        <div class="Puma-variants">
-          ${product.variants.map(variant => `<img src="${variant}" alt="${product.name}">`).join('')}
-        </div>
-        <div class="size-headline">
-          <h2>Sizes</h2>
-        </div>
-        <div class="sizes">
-          ${product.sizes.map(size => `<span>${size}</span>`).join('')}
-        </div>
-      </div>
-    `;
-  };
 
-      
 
-   // Function to render all product cards
-   function renderProducts() {
-    const productContainer = document.getElementById('puma');
-    productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
-    attachWishlistListeners();
-    attachVariantListeners();
+//?----------------------------------------------------------Cart data (stored in localStorage)
+let cartt = JSON.parse(localStorage.getItem('cart')) || [];
+
+//?-------------------------------------------------------Function to add a product to the cart
+function addToCart(productId) {
+  const product = products.find(p => p.id === productId);
+  if (product) {
+      const cartItem = {
+          id: product.id,
+          name: product.name,
+          price: parseFloat(product.price),
+          quantity: 1, // Default quantity
+          image: product.image,
+      };
+
+      //? Check if the product already exists in the cart
+      const existingItem = cart.find(item => item.id === productId);  // Fixed typo: cartt -> cart
+      if (existingItem) {
+          existingItem.quantity += 1; // Increment quantity if already in cart
+      } else {
+          cart.push(cartItem); // Add new item to cart  // Fixed typo: cartt -> cart
+      }
+
+      // Save cart to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));  // Fixed typo: cartt -> cart
+
+      // Update cart UI
+      updateCartUI();
+      alert(`${product.name} added to cart!`);
   }
+}
+
+
+
+//?F--------------------------------------Function to attach event listeners to "Add to Cart" buttons
+function attachCartButtons() {
+  const addToCartButtons = document.querySelectorAll('.cart-button');
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', (event) => {
+          const productId = parseInt(event.target.getAttribute('data-product-id'));
+          addToCart(productId);
+      });
+  });
+}
+
+//? Function to generate product card HTML
+function createProductCard(product) {
+  return `
+      <div class="Puma-trending-column-details">
+          <i class="bi bi-heart"></i>
+          <div class="Puma-trending-card-details">
+              <img src="${product.image}" alt="${product.name}">
+              <div class="Puma-trending-details">
+                  <h2>${product.name}</h2>
+                  <p>${product.description}</p>
+                  <p>${product.year}</p>
+                  <p>$${product.price}</p>
+                  <div class="quantity">
+                      <i class="bi bi-dash" onclick="updateQuantity('decrement', 'quantity${product.id}')"></i>
+                      <span class="quantity-display" id="quantity${product.id}">1</span>
+                      <i class="bi bi-plus" onclick="updateQuantity('increment', 'quantity${product.id}')"></i>
+                  </div>
+                  <button class="buy-button">Buy</button>
+                  <button class="cart-button" data-product-id="${product.id}">Add to cart</button>
+              </div>
+          </div>
+          <div class="Puma-variants">
+              ${product.variants.map(variant => `<img src="${variant}" alt="${product.name}">`).join('')}
+          </div>
+          <div class="size-headline">
+              <h2>Sizes</h2>
+          </div>
+          <div class="sizes">
+              ${product.sizes.map(size => `<span>${size}</span>`).join('')}
+          </div>
+      </div>
+  `;
+}
+
+
+//?----------------------------------------------------------------------Function to render all product cards
+function renderProducts() {
+  const productContainer = document.getElementById('puma');
+  productContainer.innerHTML = products.map(product => createProductCard(product)).join('');
+  attachWishlistListeners();
+  attachVariantListeners();
+  attachCartButtons();
+  updateCartUI(); // Initialize cart UI
+}
+
+//? Render products on page load
+renderProducts();
 
 
 
 
 
-  // Render products on page load
-  renderProducts();
